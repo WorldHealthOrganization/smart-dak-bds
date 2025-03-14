@@ -1,12 +1,23 @@
-This implementation guide is meant to facilitate operationalization of the World Health Organization (WHO) Digital Adaptation Kit (DAK) for <mark>[insert health domain here]</mark>. This page includes links to the published DAK for <mark>[insert health domain here]</mark>, as well as a small subset of other references.
+This implementation guide is meant to facilitate operationalization of the World Health Organization (WHO) Digital Adaptation Kit (DAK) for birth defects surveillance (BDS).
 
-For additional resources, see the <a href="dependencies.html">Dependencies</a> page, which includes the standards referenced in this implementation guide and the references section in the published DAK for <mark>[insert health domain here]</mark>.
+The DAK for BDS and the associated implementation tools can be found here: 
 
-### WHO Digital Adaptation Kit (DAK) for <mark>[insert health domain here]</mark>
+- [Published DAK Document](https://iris.who.int/handle/)
 
-> The Digital Adaptation Kit was published on \[publication date\]:
->
-> \[Link to the DAK and accompanying web annexes when available\]
+- Implementation tools:
+  
+    - [Link to core data dictionary](https://smart.who.int/dak-bds/dictionary.html)
+ 
+    - [Link to decision support logic](https://smart.who.int/dak-bds/decision-logic.html)
+
+    - [Link to scheduling logic](https://smart.who.int/dak-bds/scheduling-logic.html)
+
+    - [Link to indicators table](https://smart.who.int/dak-bds/indicators.html)
+ 
+    - [Link to functional and non functional requirements](https://smart.who.int/dak-bds/system-requirements.html)
+	
+
+For additional resources, see the <a href="dependencies.html">Dependencies</a> page, which includes the standards referenced in this implementation guide, and the references section in the published DAK for BDS.
 
 ### WHO guideline development
     
@@ -17,7 +28,4 @@ For additional resources, see the <a href="dependencies.html">Dependencies</a>�
 ### Tutorials and reference materials for developers
 - [References section of the SMART IG starter kit](https://worldhealthorganization.github.io/smart-ig-starter-kit/references.html#2)
 
-### Additional resources
--   [WHO Digital implementation investment guide (DIIG): integrating digital interventions into health programmes](https://www.who.int/publications/i/item/9789240010567)
-
--   [Open Health Information Exchange (OpenHIE) Specification and Architecture](https://guides.ohie.org/arch-spec/architecture-specification/overview-of-the-architecture)
+- [Open Health Information Exchange (OpenHIE) Specification and Architecture](https://guides.ohie.org/arch-spec/architecture-specification/overview-of-the-architecture)
