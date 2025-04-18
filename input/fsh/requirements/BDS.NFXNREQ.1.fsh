@@ -2,14 +2,14 @@
 Instance: BDS.NFXNREQ.1
 InstanceOf: SGRequirements
 Usage: #definition
-* title = "Provide password-protected access for authorized users "
+* title = "Provide password-protected access for authorized users"
 * status = $pubStatus#active
-* name = "Provide password-protected access for authorized users "
+* name = "Provide password-protected access for authorized users"
 * publisher = "WHO"
 * experimental = true
 * description = """
 *Category*: Security – confidentiality
-Provide password-protected access for authorized users 
+Provide password-protected access for authorized users
 """
 
 

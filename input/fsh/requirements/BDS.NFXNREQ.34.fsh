@@ -2,14 +2,14 @@
 Instance: BDS.NFXNREQ.34
 InstanceOf: SGRequirements
 Usage: #definition
-* title = "Provide a unique version number for each revision "
+* title = "Provide a unique version number for each revision"
 * status = $pubStatus#active
-* name = "Provide a unique version number for each revision "
+* name = "Provide a unique version number for each revision"
 * publisher = "WHO"
 * experimental = true
 * description = """
 *Category*: System requirements – general
-Provide a unique version number for each revision 
+Provide a unique version number for each revision
 """
 
 

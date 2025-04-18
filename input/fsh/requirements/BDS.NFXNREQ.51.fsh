@@ -2,14 +2,14 @@
 Instance: BDS.NFXNREQ.51
 InstanceOf: SGRequirements
 Usage: #definition
-* title = "Provide informative error messages and tool-tips  "
+* title = "Provide informative error messages and tool-tips"
 * status = $pubStatus#active
-* name = "Provide informative error messages and tool-tips  "
+* name = "Provide informative error messages and tool-tips"
 * publisher = "WHO"
 * experimental = true
 * description = """
 *Category*: System requirements – usability
-Provide informative error messages and tool-tips  
+Provide informative error messages and tool-tips
 """
 
 
