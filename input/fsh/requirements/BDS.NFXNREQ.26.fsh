@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Permit independent security audits to check security compliance on a regular basis, if required by protocol"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityaudittrailandlogs
 * description = """
 *Category*: Security – audit trail and logs
 Permit independent security audits to check security compliance on a regular basis, if required by protocol

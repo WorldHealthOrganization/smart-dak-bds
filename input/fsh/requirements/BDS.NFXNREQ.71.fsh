@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Provide ability to create, read, update and delete report templates to use for automated reporting"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsconfiguration
 * description = """
 *Category*: System requirements – configuration
 Provide ability to create, read, update and delete report templates to use for automated reporting

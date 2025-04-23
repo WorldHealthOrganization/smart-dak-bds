@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Provide capacity of the solution to be linked to data visualizer tool (e.g. Pw Bi, DHIS2)"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsgeneral
 * description = """
 *Category*: System requirements – general
 Provide capacity of the solution to be linked to data visualizer tool (e.g. Pw Bi, DHIS2)

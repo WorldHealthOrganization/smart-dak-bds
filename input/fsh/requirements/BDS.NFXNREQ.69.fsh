@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Configure workflows and business rules to accommodate differences between facilities"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsconfiguration
 * description = """
 *Category*: System requirements – configuration
 Configure workflows and business rules to accommodate differences between facilities

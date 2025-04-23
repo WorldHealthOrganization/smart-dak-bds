@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Simplify data recording through predefined dropdown menu or searchable lists, radio buttons or checkboxes"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsusability
 * description = """
 *Category*: System requirements – usability
 Simplify data recording through predefined dropdown menu or searchable lists, radio buttons or checkboxes

@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Architecture of the solution is consistent with architecture of HIS"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsinteroperability
 * description = """
 *Category*: System requirements – interoperability
 Architecture of the solution is consistent with architecture of HIS

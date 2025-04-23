@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Access to data, data transfer and data storage are secured (encrypted)"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityconfidentiality
 * description = """
 *Category*: Security – confidentiality
 Access to data, data transfer and data storage are secured (encrypted)

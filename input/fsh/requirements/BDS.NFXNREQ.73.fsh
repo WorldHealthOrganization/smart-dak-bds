@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Provide access to data through APIs"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsinteroperability
 * description = """
 *Category*: System requirements – interoperability
 Provide access to data through APIs

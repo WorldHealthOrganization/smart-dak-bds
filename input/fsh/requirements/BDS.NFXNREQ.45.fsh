@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Warn user if no valid backup for more than a predefined number of days"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsreliability
 * description = """
 *Category*: System requirements – reliability
 Warn user if no valid backup for more than a predefined number of days

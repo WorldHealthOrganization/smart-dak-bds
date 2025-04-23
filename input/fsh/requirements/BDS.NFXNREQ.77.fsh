@@ -9,6 +9,7 @@ Countries can develop their own local coding system, but WHO recommends use of I
 Countries can develop their own local coding system, but WHO recommends use of ICD-10 coding system to classify congenital anomalies for international reporting and comparisons"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsinteroperability
 * description = """
 *Category*: System requirements – interoperability
 Solution should use international coding standards for data whenever possible

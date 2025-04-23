@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Prevent remembering username and password"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityconfidentiality
 * description = """
 *Category*: Security – confidentiality
 Prevent remembering username and password

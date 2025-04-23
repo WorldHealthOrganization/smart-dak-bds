@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Log access to views of individual client records"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityaudittrailandlogs
 * description = """
 *Category*: Security – audit trail and logs
 Log access to views of individual client records

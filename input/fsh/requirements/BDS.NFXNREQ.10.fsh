@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Notify user to change password the first time they log in"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityauthentication
 * description = """
 *Category*: Security – authentication
 Notify user to change password the first time they log in

@@ -7,6 +7,7 @@ Usage: #definition
 * name = "The system should be able to integrate with other approved systems, such as electronic medical records and public health databases, to allow for seamless data sharing and analysis"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsinteroperability
 * description = """
 *Category*: System requirements – interoperability
 The system should be able to integrate with other approved systems, such as electronic medical records and public health databases, to allow for seamless data sharing and analysis

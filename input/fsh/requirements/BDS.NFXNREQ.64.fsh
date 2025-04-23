@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Provide user guidelines and training materials to effectively use the IT solution"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsusability
 * description = """
 *Category*: System requirements – usability
 Provide user guidelines and training materials to effectively use the IT solution

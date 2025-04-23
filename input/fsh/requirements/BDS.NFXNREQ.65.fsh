@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Provide technical documentation of the IT solution (e.g. system architecture documentation, application programming interface (API) documentation)"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsusability
 * description = """
 *Category*: System requirements – usability
 Provide technical documentation of the IT solution (e.g. system architecture documentation, application programming interface (API) documentation)

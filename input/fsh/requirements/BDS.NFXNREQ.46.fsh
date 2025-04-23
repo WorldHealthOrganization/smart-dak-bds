@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Be able to revert to the latest functional version of the solution without losing data (server backup/restore, disaster recovery plan)"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsreliability
 * description = """
 *Category*: System requirements – reliability
 Be able to revert to the latest functional version of the solution without losing data (server backup/restore, disaster recovery plan)

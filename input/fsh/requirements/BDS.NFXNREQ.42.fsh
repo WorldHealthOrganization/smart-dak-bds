@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Work in environments subject to loss of connectivity"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsreliability
 * description = """
 *Category*: System requirements – reliability
 Work in environments subject to loss of connectivity

@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Generate analysis of the usage of different system features and reports"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityaudittrailandlogs
 * description = """
 *Category*: Security – audit trail and logs
 Generate analysis of the usage of different system features and reports

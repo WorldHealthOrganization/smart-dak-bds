@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Notify user to regularly change their password"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityusermanagement
 * description = """
 *Category*: Security – user management
 Notify user to regularly change their password

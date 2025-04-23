@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Scalable to accommodate new demands"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsscalability
 * description = """
 *Category*: System requirements – scalability
 Scalable to accommodate new demands

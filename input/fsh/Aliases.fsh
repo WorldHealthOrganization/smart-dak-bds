@@ -16,3 +16,7 @@ Alias: $pubStatus = http://hl7.org/fhir/publication-status
 Alias: $actorType = http://hl7.org/fhir/examplescenario-actor-type
 
 Alias: $SGActor = http://smart.who.int/base/StructureDefinition/SGActor
+
+Alias: $DHIClassificationv1 = http://smart.who.int/base/CodeSystem/DHIv1
+
+Alias: $DHIClassificationv2 = http://smart.who.int/base/CodeSystem/DHIv2

@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Adhere to complex password requirements"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityauthentication
 * description = """
 *Category*: Security – authentication
 Adhere to complex password requirements

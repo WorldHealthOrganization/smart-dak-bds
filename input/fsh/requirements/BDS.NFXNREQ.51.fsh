@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Provide informative error messages and tool-tips"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsusability
 * description = """
 *Category*: System requirements – usability
 Provide informative error messages and tool-tips

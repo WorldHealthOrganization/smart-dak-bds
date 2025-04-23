@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityusermanagement
 * description = """
 *Category*: Security – user management
 Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing

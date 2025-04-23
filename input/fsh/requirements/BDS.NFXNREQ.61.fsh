@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Allow adaptability to multiple operating systems (e.g. Windows, Linux, IOS, Android)"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsusability
 * description = """
 *Category*: System requirements – usability
 Allow adaptability to multiple operating systems (e.g. Windows, Linux, IOS, Android)

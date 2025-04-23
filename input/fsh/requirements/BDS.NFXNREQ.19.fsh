@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Record all authentication violations"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityaudittrailandlogs
 * description = """
 *Category*: Security – audit trail and logs
 Record all authentication violations

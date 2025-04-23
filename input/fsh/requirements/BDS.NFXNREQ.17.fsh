@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Require each user to authenticate by role before gaining access to the system"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityauthentication
 * description = """
 *Category*: Security – authentication
 Require each user to authenticate by role before gaining access to the system

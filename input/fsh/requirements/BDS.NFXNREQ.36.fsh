@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Report version number when saving data to the database"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsgeneral
 * description = """
 *Category*: System requirements – general
 Report version number when saving data to the database

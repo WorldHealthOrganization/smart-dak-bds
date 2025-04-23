@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Provide guidance to users to better support clinical guidelines and best clinical practices"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsusability
 * description = """
 *Category*: System requirements – usability
 Provide guidance to users to better support clinical guidelines and best clinical practices

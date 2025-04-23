@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Automatically log out the user after specified time of inactivity"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityconfidentiality
 * description = """
 *Category*: Security – confidentiality
 Automatically log out the user after specified time of inactivity

@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Provide a unique version number for each revision"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsgeneral
 * description = """
 *Category*: System requirements – general
 Provide a unique version number for each revision

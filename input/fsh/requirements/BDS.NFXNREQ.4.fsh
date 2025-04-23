@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Provide ability for allowed users to view confidential data"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityconfidentiality
 * description = """
 *Category*: Security – confidentiality
 Provide ability for allowed users to view confidential data

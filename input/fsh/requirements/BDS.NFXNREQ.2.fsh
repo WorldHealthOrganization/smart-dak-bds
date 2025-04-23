@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Provide a means to ensure confidentiality and privacy of personal health information"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityconfidentiality
 * description = """
 *Category*: Security – confidentiality
 Provide a means to ensure confidentiality and privacy of personal health information

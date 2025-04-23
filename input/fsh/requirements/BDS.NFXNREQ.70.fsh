@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Store important system documents and information such as protocols, case inclusion criteria, surveillance population and similar important facets of the system, and make them available for retrieval as needed"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsconfiguration
 * description = """
 *Category*: System requirements – configuration
 Store important system documents and information such as protocols, case inclusion criteria, surveillance population and similar important facets of the system, and make them available for retrieval as needed

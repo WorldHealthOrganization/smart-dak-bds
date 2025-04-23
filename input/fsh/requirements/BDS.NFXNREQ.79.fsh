@@ -7,6 +7,7 @@ Usage: #definition
 * name = "A birth defects surveillance mobile application should be able to function as a standalone (for training purposes, small-scale surveillance or other uses) and/or contribute data to a centralized database, depending on local protocols"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsgeneral
 * description = """
 *Category*: System requirements – general
 A birth defects surveillance mobile application should be able to function as a standalone (for training purposes, small-scale surveillance or other uses) and/or contribute data to a centralized database, depending on local protocols

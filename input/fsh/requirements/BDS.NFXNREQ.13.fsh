@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Notify user of password change to their account"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityauthentication
 * description = """
 *Category*: Security – authentication
 Notify user of password change to their account

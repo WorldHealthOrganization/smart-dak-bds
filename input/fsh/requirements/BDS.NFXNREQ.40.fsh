@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Must have ability to store images and other unstructured data"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsgeneral
 * description = """
 *Category*: System requirements – general
 Must have ability to store images and other unstructured data

@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Reset user's password in a secure manner"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityauthentication
 * description = """
 *Category*: Security – authentication
 Reset user's password in a secure manner

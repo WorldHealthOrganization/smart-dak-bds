@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Allow for data exchange and efficient synchronization across multiple facilities and points of service when Internet is available, even when it is intermittent and slow"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsinteroperability
 * description = """
 *Category*: System requirements – interoperability
 Allow for data exchange and efficient synchronization across multiple facilities and points of service when Internet is available, even when it is intermittent and slow

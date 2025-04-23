@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Communicate with external systems through mediators"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsinteroperability
 * description = """
 *Category*: System requirements – interoperability
 Communicate with external systems through mediators

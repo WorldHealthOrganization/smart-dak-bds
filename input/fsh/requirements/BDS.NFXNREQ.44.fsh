@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Have ability to easily back up information"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Systemrequirementsreliability
 * description = """
 *Category*: System requirements – reliability
 Have ability to easily back up information

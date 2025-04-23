@@ -7,6 +7,7 @@ Usage: #definition
 * name = "Provide password-protected access for authorized users"
 * publisher = "WHO"
 * experimental = true
+* extension[classification][+].valueCoding = FXREQCategories#Securityconfidentiality
 * description = """
 *Category*: Security – confidentiality
 Provide password-protected access for authorized users
