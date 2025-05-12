@@ -1,0 +1,14 @@
+{
+    "package-id" : "smart.who.int.dak-[health domain abbreviation]",
+    "title" : "SMART DAK [health domain abbreviation]", 
+    "category" : "base",
+    "introduction" : "SMART DAK [health domain abbreviation]",
+    "version" : "0.9.9",
+    "desc" : "0.9.9 Draft Release",
+    "mode" : "milestone",    
+    "path" : "http://smart.who.int/dak-[health domain abbreviation]/v0.9.9",
+    "ci-build": "http://worldhealthorganization.github.io/smart-dak-[health domain abbreviation]",    
+    "first": true,
+    "status" : "draft",
+    "sequence" : "Releases"
+  }
