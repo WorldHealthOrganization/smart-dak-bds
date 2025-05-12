@@ -1,0 +1,19 @@
+{
+  "url" : "http://smart.who.int/dak-empty/ImplementationGuide/smart.who.int.dak-empty",
+  "name" : "DAKEmpty",
+  "title" : "SMART DAK Empty",
+  "description" : "An empty Digital Adaptation Kit (DAK) Implementation Guide to be used as a starting point for publishing SMART DAK content",
+  "status" : "draft",
+  "package-id" : "smart.who.int.dak-empty",
+  "ig-ver" : "0.1.0",
+  "date" : "Mon, 12 May, 2025 11:22:39 +0000",
+  "dateISO8601" : "2025-05-12T11:22:39+00:00",
+  "errs" : 149,
+  "warnings" : 173,
+  "hints" : 117,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2806069656
+}
