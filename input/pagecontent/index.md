@@ -12,9 +12,7 @@ The DAK for BDS and the associated implementation tools can be found here:
 - [Published DAK Document](https://iris.who.int/handle/10665/381620)
 
 - Implementation tools:
-
-    - [Link to the editable file of each business process in .bpmn format](https://smart.who.int/dak-bds/business-processes.html)
-    
+  
     - [Link to core data dictionary](https://smart.who.int/dak-bds/dictionary.html)
 
     - [Link to indicators table](https://smart.who.int/dak-bds/indicators.html)
@@ -42,8 +40,6 @@ This work is licensed under a
 [cc-by]: http://creativecommons.org/licenses/by-nc-sa/3.0/igo/
 [cc-by-image]: https://i.creativecommons.org/l/by-nc-sa/3.0/igo/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%203.0-lightgrey.svg
-
-For more license details please see the [license page](https://smart.who.int/dak-bds/license.html).
 
 ### Providing Feedback
 {% include feedback.md %}

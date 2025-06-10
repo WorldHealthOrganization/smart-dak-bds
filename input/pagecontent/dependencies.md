@@ -8,6 +8,6 @@ _Standardized terminologies and classifications:_
 	- [International Classification of Health Interventions (ICHI)](https://icd.who.int/dev11/l-ichi/en)
 	- [Anatomical Therapeutic Chemical (ATC) Classification](https://www.who.int/tools/atc-ddd-toolkit/atc-classification)
   
-  * [LOINC version 2.78](https://loinc.org/news/loinc-version-2-78-is-now-available/)
+  * [LOINC version 2.68](https://loinc.org/news/loinc-version-2-68-and-relma-version-7-1-are-now-available/)
   
   * [SNOMED GPS](https://www.snomed.org/gps)

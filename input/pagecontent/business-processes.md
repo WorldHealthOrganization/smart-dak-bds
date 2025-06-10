@@ -1,5 +1,7 @@
 This page describes the business processes included in the WHO Digital
-Adaptation Kit (DAK) for Birth Defects Surveillance (BDS).
+Adaptation Kit (DAK) for Birth Defects Surveillance (BDS) [Published DAK Document](https://iris.who.int/handle/10665/381620).
+
+For full details, see the published DAK content.
 
 A business process, or process, is a set of related activities or tasks 
 performed together to achieve the objectives of the health programme area, 
@@ -7,12 +9,12 @@ such as registration, counselling, referrals. Workflows are a visual
 representation of the progression of activities (tasks, events, interactions) 
 that are performed within the business process. The workflow provides a “story” 
 for the business process being diagrammed and is used to enhance communication 
-and collaboration among users, stakeholders and engineers. The workflows included in this DAK depict processes that have been generalized across different contexts and may not reflect the variability and nuances across different settings. The simplicity of the workflow may not adequately illustrate the nonlinear steps that may occur.
+and collaboration among users, stakeholders and engineers.
 
 The DAK for BDS focuses on key business processes involved in birth defects surveillance including the identification of birth defects, the confirmation of diagnosis and aggregation of surveillance data.
 
 ### Overview of Key Business Processes 
-The following table presents the business processes included in this DAK. 
+The following table describes the workflows of the included processes. 
 
 <table border="1" class="dataframe table table-striped table-bordered">
   <thead>
@@ -49,7 +51,8 @@ The following table presents the business processes included in this DAK.
   </tbody>
 </table>
 
-The source files of the business processes listed in the table above can be downloaded [here](BDS DAK_BPMN files.zip).
+### Workflows
+The workflows that follow depict processes that have been generalized across different contexts and may not reflect the variability and nuances across different settings. The simplicity of the workflow may not adequately illustrate the nonlinear steps that may occur.
 
-For more details, please see component 4 "Generic business processes and workflows" in the [published DAK content](https://iris.who.int/handle/10665/381620).
-
+#### Overview of key birth defects surveillance process flows
+The business processes included in the DAK are shown in the following figure. Processes included in the DAK start with a letter (e.g. "A.") and are shown using the "Activity with sub-process" shape, which includes a plus sign. 
