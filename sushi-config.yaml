@@ -1,10 +1,10 @@
-id: smart.who.int.dak-bds
-canonical: http://smart.who.int/dak-bds
-name: DakBds
-title: SMART DAK BDS
-description: SMART Digital Adaptation Kit (DAK) for birth defects surveillance (BDS)
+id: smart.who.int.dak-empty
+canonical: http://smart.who.int/dak-empty
+name: DAKEmpty
+title: SMART DAK Empty
+description: An empty Digital Adaptation Kit (DAK) Implementation Guide to be used as a starting point for publishing SMART DAK content
 status: draft # draft | active | retired | unknown
-version: 1.0.1
+version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -49,8 +49,6 @@ pages:
       title: Decision-support logic
     indicators.md:
       title: Indicator and Performance Metrics
-    system-requirements.md:
-      title: System Requirements
     functional-requirements.md:
       title: Functional Requirements
     non-functional-requirements.md:
