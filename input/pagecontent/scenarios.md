@@ -8,4 +8,5 @@ User scenarios can be helpful tools not only to better understand the context in
 
 As examples, the scenarios identify: 
 - key data elements that need to be recorded and/or calculated;
+- decision-support logic that can be automated in the system;
 - key functional and non-functional requirements that should be included in the system.
