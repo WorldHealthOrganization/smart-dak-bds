@@ -2,16 +2,12 @@ This implementation guide is meant to facilitate operationalization of the World
 
 The DAK for BDS and the associated implementation tools can be found here: 
 
-- [Published DAK Document](https://iris.who.int/handle/)
+- [Published DAK Document](https://iris.who.int/handle/10665/381620)
 
 - Implementation tools:
   
     - [Link to core data dictionary](https://smart.who.int/dak-bds/dictionary.html)
  
-    - [Link to decision support logic](https://smart.who.int/dak-bds/decision-logic.html)
-
-    - [Link to scheduling logic](https://smart.who.int/dak-bds/scheduling-logic.html)
-
     - [Link to indicators table](https://smart.who.int/dak-bds/indicators.html)
  
     - [Link to functional and non functional requirements](https://smart.who.int/dak-bds/system-requirements.html)
