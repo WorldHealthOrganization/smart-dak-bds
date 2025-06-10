@@ -1,10 +1,10 @@
-id: smart.who.int.dak-empty
-canonical: http://smart.who.int/dak-empty
-name: DAKEmpty
-title: SMART DAK Empty
-description: An empty Digital Adaptation Kit (DAK) Implementation Guide to be used as a starting point for publishing SMART DAK content
+id: smart.who.int.dak-bds
+canonical: http://smart.who.int/dak-bds
+name: DakBds
+title: SMART DAK BDS
+description: SMART Digital Adaptation Kit (DAK) for birth defects surveillance (BDS)
 status: draft # draft | active | retired | unknown
-version: 0.1.0
+version: 1.0.1
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -47,8 +47,12 @@ pages:
       title: Data Dictionary
     decision-logic.md:
       title: Decision-support logic
+    scheduling-logic.md:
+      title: Scheduling logic
     indicators.md:
       title: Indicator and Performance Metrics
+    system-requirements.md:
+      title: System Requirements
     functional-requirements.md:
       title: Functional Requirements
     non-functional-requirements.md:
@@ -104,8 +108,10 @@ menu:
     User Scenarios: scenarios.html
     Business Processes: business-processes.html
     Data Dictionary: dictionary.html
+    Scheduling Logic: scheduling-logic.html
     Decision-support Logic: decision-logic.html
     Indicator and Performance Metrics: indicators.html
+    System Requirements: system-requirements.html
     Functional Requirements: functional-requirements.html
     Non-functional Requirements: non-functional-requirements.html
   Data Models and Exchange:

@@ -1,0 +1,3 @@
+
+
+Given the nature of birth defects surveillance,the WHO Digital Adaptation Kit (DAK) for Birth Defects Surveillance (BDS) [Published DAK Document](https://iris.who.int/handle/10665/381620) does not include scheduling logic which is common to other DAKs.
