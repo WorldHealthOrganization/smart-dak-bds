@@ -1,0 +1,14 @@
+{
+    "package-id": "smart.who.int.dak-bds",
+    "title": "SMART DAK BDS",
+    "category": "base",
+    "introduction": "SMART DAK BDS",
+    "version": "1.0.0",
+    "desc": "1.0.0 Release",
+    "mode": "milestone",
+    "path": "http://smart.who.int/dak-bds/v1.0.0",
+    "ci-build": "http://worldhealthorganization.github.io/smart-dak-bds",
+    "first": true,
+    "status": "release",
+    "sequence": "Releases"
+}
