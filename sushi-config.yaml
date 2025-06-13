@@ -263,7 +263,7 @@ menu:
 #
 #   setId: always # always | standalone-only
 dependencies:
-  smart.who.int.base: current
+  smart.who.int.base: 0.1.0
 
 
 parameters: 
