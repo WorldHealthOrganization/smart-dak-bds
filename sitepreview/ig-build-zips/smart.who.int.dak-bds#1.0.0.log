@@ -1,0 +1,396 @@
+FHIR IG Publisher Version 2.0.6 (Git# 0e36f4bcb58f). Built 2025-06-10T06:56:14.605Z (3 days old)
+Detected Java version: 23-ea from /usr/local/openjdk-23 on amd64 (64bit). 4096MB available
+dir = /workspace, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/openjdk-23/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Parameters: -go-publish -package-cache-folder /workspace/fhir-package-cache -source /workspace/source -web /workspace/webroot -temp /workspace/temp -registry /workspace/ig-registry/fhir-ig-list.json -history /workspace/history-template -templates /workspace/webroot/templates
+---------------
+Publication Run: publish /workspace/source to /workspace/webroot
+Relative directory for IG is '/dak-bds'
+===== Web Publication Run Details ===============================
+ Source IG: smart.who.int.dak-bds#1.0.0 : http://smart.who.int/dak-bds (R4) from /workspace/source
+All checks passed. Do the publication build from /workspace/source and publish to /workspace/temp/web-root/run-20250613/dak-bds
+Prepare Build space in /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0
+Build IG at /workspace/source: final copy suitable for publication (in /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0)
+FHIR IG Publisher Version 2.0.6 (Git# 0e36f4bcb58f). Built 2025-06-10T06:56:14.605Z (3 days old)    
+Detected Java version: 23-ea from /usr/local/openjdk-23 on Linux/amd64 (64bit). 4096MB available    
+dir = /workspace, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/openjdk-23/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Parameters: -ig /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0 -resetTx -publish http://smart.who.int/dak-bds/v1.0.0 -no-exit
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ Friday, June 13, 2025, 1:35:40 PM Coordinated Universal Time (2025-06-13T13:35:40Z)   
+                                                                                                    
+Build FHIR IG from /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0                             (00:00.024 / 00:00.024, 49Mb)
+Build Formal Publication package, intended for http://smart.who.int/dak-bds/v1.0.0                   (00:00.002 / 00:00.027, 49Mb)
+API keys loaded from /home/publisher/.fhir/fhir-settings.json                                        (00:00.000 / 00:00.028, 49Mb)
+Package Cache: /home/publisher/.fhir/packages                                                        (00:00.003 / 00:00.031, 49Mb)
+Found dependency on smart.who.int.base#0.1.0 in Sushi config. Pre-installing                         (00:00.004 / 00:00.035, 49Mb)
+Installing smart.who.int.base#0.1.0 to the package cache
+  Fetching:
+
+Installing smart.who.int.base#0.1.0
+ done.
+Run Sushi on /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0                                   (00:00.699 / 00:00.735, 33Mb)
+Sushi: info  Running SUSHI v3.16.0 (implements FHIR Shorthand specification v3.0.0)                  (00:00.459 / 00:01.194, 21Mb)
+Sushi: info  Arguments:                                                                              (00:00.000 / 00:01.195, 21Mb)
+Sushi: info    --require-latest                                                                      (00:00.000 / 00:01.196, 21Mb)
+Sushi: info    --out /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0                           (00:00.000 / 00:01.197, 21Mb)
+Sushi: info    /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0                                 (00:00.000 / 00:01.198, 21Mb)
+Sushi: info  Using configuration file: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/sushi-config.yaml (00:00.383 / 00:01.581, 21Mb)
+Sushi: info  Importing FSH text...                                                                   (00:00.103 / 00:01.684, 21Mb)
+Sushi: info  Preprocessed 3 documents with 15 aliases.                                               (00:00.038 / 00:01.722, 21Mb)
+Sushi: info  Imported 0 definitions and 0 instances.                                                 (00:00.000 / 00:01.723, 21Mb)
+Sushi: info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources                             (00:00.086 / 00:01.809, 21Mb)
+Sushi: info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 0.5.0                          (00:00.546 / 00:02.355, 21Mb)
+Sushi: info  Attempting to download hl7.fhir.uv.tools.r4#0.5.0 from https://packages.fhir.org/hl7.fhir.uv.tools.r4/0.5.0 (00:00.000 / 00:02.356, 21Mb)
+Sushi: info  Downloaded hl7.fhir.uv.tools.r4#0.5.0                                                   (00:00.339 / 00:02.696, 21Mb)
+Sushi: info  Cached hl7.fhir.uv.tools.r4#0.5.0 to /home/publisher/.fhir/packages/hl7.fhir.uv.tools.r4#0.5.0 (00:00.001 / 00:02.698, 21Mb)
+Sushi: info  Loaded hl7.fhir.uv.tools.r4#0.5.0 with 88 resources                                     (00:00.040 / 00:02.739, 21Mb)
+Sushi: info  Resolved hl7.terminology.r4#latest to concrete version 6.4.0                            (00:00.123 / 00:02.862, 21Mb)
+Sushi: info  Attempting to download hl7.terminology.r4#6.4.0 from https://packages.fhir.org/hl7.terminology.r4/6.4.0 (00:00.000 / 00:02.863, 21Mb)
+Sushi: info  Downloaded hl7.terminology.r4#6.4.0                                                     (00:01.401 / 00:04.264, 21Mb)
+Sushi: info  Cached hl7.terminology.r4#6.4.0 to /home/publisher/.fhir/packages/hl7.terminology.r4#6.4.0 (00:00.001 / 00:04.265, 21Mb)
+Sushi: info  Loaded hl7.terminology.r4#6.4.0 with 4381 resources                                     (00:00.957 / 00:05.223, 21Mb)
+Sushi: info  Resolved hl7.fhir.uv.extensions.r4#latest to concrete version 5.2.0                     (00:00.124 / 00:05.347, 21Mb)
+Sushi: info  Attempting to download hl7.fhir.uv.extensions.r4#5.2.0 from https://packages.fhir.org/hl7.fhir.uv.extensions.r4/5.2.0 (00:00.000 / 00:05.348, 21Mb)
+Sushi: info  Downloaded hl7.fhir.uv.extensions.r4#5.2.0                                              (00:00.409 / 00:05.758, 21Mb)
+Sushi: info  Cached hl7.fhir.uv.extensions.r4#5.2.0 to /home/publisher/.fhir/packages/hl7.fhir.uv.extensions.r4#5.2.0 (00:00.001 / 00:05.759, 21Mb)
+Sushi: info  Loaded hl7.fhir.uv.extensions.r4#5.2.0 with 759 resources                               (00:00.177 / 00:05.936, 21Mb)
+Sushi: info  Loaded smart.who.int.base#0.1.0 with 17 resources                                       (00:00.011 / 00:05.948, 21Mb)
+Sushi: info  Attempting to download hl7.fhir.r4.core#4.0.1 from https://packages.fhir.org/hl7.fhir.r4.core/4.0.1 (00:00.000 / 00:05.949, 21Mb)
+Sushi: info  Downloaded hl7.fhir.r4.core#4.0.1                                                       (00:01.112 / 00:07.062, 21Mb)
+Sushi: info  Cached hl7.fhir.r4.core#4.0.1 to /home/publisher/.fhir/packages/hl7.fhir.r4.core#4.0.1  (00:00.001 / 00:07.063, 21Mb)
+Sushi: info  Loaded hl7.fhir.r4.core#4.0.1 with 4581 resources                                       (00:00.897 / 00:07.960, 21Mb)
+Sushi: info  Found 1 non-JSON / non-XML file(s) in directory: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/input/examples. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging. (00:00.007 / 00:07.967, 21Mb)
+Sushi: info  Found 1 non-JSON / non-XML file(s) in directory: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/input/extensions. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging. (00:00.002 / 00:07.969, 21Mb)
+Sushi: info  Found 1 non-JSON / non-XML file(s) in directory: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/input/models. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging. (00:00.003 / 00:07.973, 21Mb)
+Sushi: info  Found 1 non-JSON / non-XML file(s) in directory: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/input/profiles. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging. (00:00.002 / 00:07.976, 21Mb)
+Sushi: info  Found 1 non-JSON / non-XML file(s) in directory: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/input/resources. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging. (00:00.002 / 00:07.978, 21Mb)
+Sushi: info  Found 1 non-JSON / non-XML file(s) in directory: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/input/vocabulary. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging. (00:00.001 / 00:07.979, 21Mb)
+Sushi: info  Loaded virtual package sushi-local#LOCAL with 0 resources                               (00:00.001 / 00:07.981, 21Mb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.009 / 00:07.990, 21Mb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.006 / 00:07.997, 21Mb)
+Sushi: info  Exported 0 FHIR resources as JSON.                                                      (00:00.000 / 00:07.998, 21Mb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.000 / 00:07.999, 21Mb)
+Sushi: info  Generated ImplementationGuide-smart.who.int.dak-bds.json                                (00:00.032 / 00:08.031, 21Mb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.001 / 00:08.032, 21Mb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.000 / 00:08.033, 21Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:08.034, 21Mb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.000 / 00:08.035, 21Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.001 / 00:08.037, 21Mb)
+Sushi: | |       0       |      0       |      0       |       0       | |                           (00:00.001 / 00:08.038, 21Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:08.038, 21Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:08.039, 21Mb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.000 / 00:08.040, 21Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:08.040, 21Mb)
+Sushi: | |         0          |         0         |         0          | |                           (00:00.000 / 00:08.041, 21Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:08.042, 21Mb)
+Sushi: |                                                                 |                           (00:00.000 / 00:08.043, 21Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:08.043, 21Mb)
+Sushi: | Catch of the day, right here!          0 Errors      0 Warnings |                           (00:00.000 / 00:08.044, 21Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:08.045, 21Mb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.492 / 00:08.538, 40Mb)
+Load Template from who.template.root#current                                                         (00:00.490 / 00:09.028, 33Mb)
+Installing who.template.root#current to the package cache
+  Fetching:
+
+Installing who.template.root#current
+ done.
+ Load Template from fhir.base.template#current                                                       (00:01.026 / 00:10.055, 65Mb)
+Installing fhir.base.template#current to the package cache
+  Fetching:
+
+Installing fhir.base.template#current
+ done.
+Root directory: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0                                (00:03.182 / 00:13.237, 122Mb)
+Terminology Cache is at /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/input-cache/txcache. Clearing now (00:00.361 / 00:13.598, 135Mb)
+Core Package hl7.fhir.r4.core#4.0.1
+Running Terminology Log: /tmp/ohfu-fhir-ig-12943328559634817199.html
+Connect to Terminology Server at http://tx.fhir.org                                                  (00:09.571 / 00:23.170, 226Mb)
+Installing hl7.fhir.pubpack#0.2.3 to the package cache
+  Fetching:
+
+Installing hl7.fhir.pubpack#0.2.3
+ done.
+Load Package hl7.fhir.pubpack#0.2.3
+Installing hl7.fhir.xver-extensions#0.1.0 to the package cache
+  Fetching:
+
+Installing hl7.fhir.xver-extensions#0.1.0
+ done.
+Load Package hl7.fhir.xver-extensions#0.1.0
+Load Package hl7.terminology.r4#6.4.0
+Load Package hl7.fhir.uv.extensions.r4#5.2.0
+Installing hl7.terminology#5.5.0 to the package cache
+  Fetching:
+
+Installing hl7.terminology#5.5.0
+ done.
+Installing hl7.fhir.uv.extensions.r4#1.0.0 to the package cache
+  Fetching:
+
+Installing hl7.fhir.uv.extensions.r4#1.0.0
+ done.
+Load Package hl7.fhir.uv.extensions.r4#1.0.0
+Load Package hl7.terminology#5.5.0
+Installing hl7.fhir.uv.extensions.r4#5.1.0 to the package cache
+  Fetching:
+
+Installing hl7.fhir.uv.extensions.r4#5.1.0
+ done.
+Load Package hl7.fhir.uv.extensions.r4#5.1.0
+Installing hl7.fhir.uv.cql#1.0.0 to the package cache
+  Fetching:
+
+Installing hl7.fhir.uv.cql#1.0.0
+ done.
+Load Package hl7.fhir.uv.cql#1.0.0
+Installing hl7.fhir.uv.crmi#1.0.0 to the package cache
+  Fetching:
+
+Installing hl7.fhir.uv.crmi#1.0.0
+ done.
+Load Package hl7.fhir.uv.crmi#1.0.0
+Installing hl7.fhir.uv.sdc#3.0.0 to the package cache
+  Fetching:
+
+Installing hl7.fhir.uv.sdc#3.0.0
+ done.
+Ignore Dependency on Core FHIR hl7.fhir.r4.examples#4.0.1, from package 'hl7.fhir.uv.sdc#3.0.0'      (00:13.311 / 00:36.481, 657Mb)
+Load Package hl7.fhir.uv.sdc#3.0.0
+Load Package smart.who.int.base#0.1.0
+Load Package hl7.fhir.uv.tools.r4#0.5.0
+Load R5 Specials
+Installing hl7.fhir.r5.core#5.0.0 to the package cache
+  Fetching:
+
+Installing hl7.fhir.r5.core#5.0.0
+ done.
+Initialization complete                                                                              (00:03.271 / 00:39.752, 1Gb)
+Load IG                                                                                              (00:00.001 / 00:39.753, 1Gb)
+Load Content                                                                                         (00:00.001 / 00:39.755, 1Gb)
+Using en-US as the default narrative language. (no language information in Implementation Guide)     (00:00.079 / 00:39.834, 1Gb)
+Process Loaded Resources                                                                             (00:00.100 / 00:39.935, 1Gb)
+Generating Snapshots                                                                                 (00:00.068 / 00:40.003, 1Gb)
+loadPrePages from FetchedFile[/workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/fsh-generated/includes] as /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/fsh-generated/includes
+loadPrePages from FetchedFile[/workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/input/data] as /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/input/data
+loadPrePages from FetchedFile[/workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/input/pagecontent] as /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/input/pagecontent
+Fetch http://smart.who.int/dak-bds/package-list.json for version check                               (00:00.053 / 00:40.057, 1Gb)
+Processing Conformance Resources                                                                     (00:00.061 / 00:40.118, 1Gb)
+Checking Language                                                                                    (00:00.000 / 00:40.119, 1Gb)
+Load Dependency Info                                                                                 (00:00.001 / 00:40.120, 1Gb)
+Load Info                                                                                            (00:00.001 / 00:40.121, 1Gb)
+Load Paths                                                                                           (00:00.000 / 00:40.122, 1Gb)
+Check R4 / R4B                                                                                       (00:00.000 / 00:40.123, 1Gb)
+Assign Comparison Ids                                                                                (00:00.009 / 00:40.132, 1Gb)
+Propagating status                                                                                   (00:00.000 / 00:40.133, 1Gb)
+Generating Narratives                                                                                (00:00.000 / 00:40.134, 1Gb)
+Validating Conformance Resources                                                                     (00:00.482 / 00:40.617, 1Gb)
+Check profiles & code systems                                                                        (00:09.716 / 00:50.333, 619Mb)
+Check realm rules                                                                                    (00:00.000 / 00:50.334, 619Mb)
+Previous Version Comparison                                                                          (00:00.000 / 00:50.335, 619Mb)
+Validating Resources                                                                                 (00:00.009 / 00:50.344, 620Mb)
+Processing Provenance Records                                                                        (00:00.000 / 00:50.345, 620Mb)
+Generating Outputs in /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/output                   (00:00.000 / 00:50.345, 620Mb)
+Generate Native Outputs                                                                              (00:00.069 / 00:50.415, 626Mb)
+Run Template                                                                                         (00:00.088 / 00:50.504, 637Mb)
+Generate HTML Outputs                                                                                (00:00.802 / 00:51.306, 679Mb)
+Generate Spreadsheets                                                                                (00:00.053 / 00:51.360, 693Mb)
+Generate Summaries                                                                                   (00:00.000 / 00:51.360, 693Mb)
+Generating Summary Outputs                                                                           (00:00.000 / 00:51.361, 693Mb)
+DB Cumulative Time invested: 00:00:00.52
+Sending Usage Stats to Server                                                                        (00:09.055 / 01:00.417, 1001Mb)
+## Memory (MB): Use = 1001, Free = 969, Total = 1970, Max = 4096                                     (00:00.009 / 01:00.427, 1002Mb)
+Reclaiming memory...                                                                                 (00:00.000 / 01:00.427, 1002Mb)
+## Memory (MB): Use = 857, Free = 1112, Total = 1970, Max = 4096                                     (00:00.414 / 01:00.842, 859Mb)
+Run jekyll: jekyll build --destination "/workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/output" (in folder /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/temp/pages) (00:00.002 / 01:00.845, 859Mb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.001 / 01:00.846, 859Mb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.001 / 01:00.847, 859Mb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.000 / 01:00.848, 859Mb)
+Jekyll: Source: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/temp/pages                     (00:00.382 / 01:01.230, 863Mb)
+Jekyll: Generating...                                                                                (00:00.000 / 01:01.231, 863Mb)
+Jekyll: done in 0.443 seconds.                                                                       (00:00.441 / 01:01.673, 863Mb)
+
+Installing smart.who.int.dak-bds#1.0.0
+ done.
+Checking Output HTML                                                                                 (00:00.774 / 01:02.447, 933Mb)
+found 601 files                                                                                      (00:00.005 / 01:02.453, 933Mb)
+........................................
+........................................
+  ... 601 html files, 0 pages invalid xhtml (0%)                                                     (00:00.689 / 01:03.143, 1Gb)
+  ... 1827 links, 0 broken links (0%)                                                                (00:00.001 / 01:03.144, 1Gb)
+Generate fragment-usage-analysis.csv                                                                 (00:00.000 / 01:03.144, 1Gb)
+Build final .zip                                                                                     (00:00.009 / 01:03.154, 1Gb)
+Final .zip built                                                                                     (00:00.581 / 01:03.736, 1Gb)
+Installing hl7.fhir.r4.examples#4.0.1 to the package cache
+  Fetching:
+
+Installing hl7.fhir.r4.examples#4.0.1
+ done.
+Built. Times: loading: 00:00.363, generate: 00:36.088, narrative generation: 00:00.481, validation: 00:09.715, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:00.835, template: 00:00.811 (#3) (00:12.470 / 01:16.206, 1Gb)
+Generating QA                                                                                        (00:00.002 / 01:16.208, 1Gb)
+Validation output in /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0/output/qa.html
+Errors: 2, Warnings: 7, Info: 0, Broken Links: 0 (00:00.111 / 01:16.320, 1Gb)
+Finished. Max Memory Used = 1Gb. Log file saved in /tmp/fhir-ig-publisher-tmp.log                    (00:00.002 / 01:16.322, 1Gb)
+Prepare Build space in /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone
+Build IG at /workspace/source: final copy suitable for publication (in /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone) (milestone build)
+FHIR IG Publisher Version 2.0.6 (Git# 0e36f4bcb58f). Built 2025-06-10T06:56:14.605Z (3 days old)    
+Detected Java version: 23-ea from /usr/local/openjdk-23 on Linux/amd64 (64bit). 4096MB available    
+dir = /workspace, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/usr/local/openjdk-23/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Parameters: -ig /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone -publish http://smart.who.int/dak-bds/v1.0.0 -milestone -no-exit
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ Friday, June 13, 2025, 1:36:58 PM Coordinated Universal Time (2025-06-13T13:36:58Z)   
+                                                                                                    
+Build FHIR IG from /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone                   (00:00.002 / 00:00.002, 1Gb)
+Build Formal Publication package, intended for http://smart.who.int/dak-bds/v1.0.0                   (00:00.000 / 00:00.003, 1Gb)
+API keys loaded from /home/publisher/.fhir/fhir-settings.json                                        (00:00.000 / 00:00.003, 1Gb)
+Package Cache: /home/publisher/.fhir/packages                                                        (00:00.000 / 00:00.004, 1Gb)
+Run Sushi on /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone                         (00:00.001 / 00:00.006, 1Gb)
+Sushi: info  Running SUSHI v3.16.0 (implements FHIR Shorthand specification v3.0.0)                  (00:00.422 / 00:00.428, 1Gb)
+Sushi: info  Arguments:                                                                              (00:00.000 / 00:00.429, 1Gb)
+Sushi: info    --require-latest                                                                      (00:00.000 / 00:00.430, 1Gb)
+Sushi: info    --out /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone                 (00:00.000 / 00:00.431, 1Gb)
+Sushi: info    /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone                       (00:00.000 / 00:00.432, 1Gb)
+Sushi: info  Using configuration file: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/sushi-config.yaml (00:00.412 / 00:00.844, 1Gb)
+Sushi: info  Importing FSH text...                                                                   (00:00.100 / 00:00.945, 1Gb)
+Sushi: info  Preprocessed 3 documents with 15 aliases.                                               (00:00.035 / 00:00.980, 1Gb)
+Sushi: info  Imported 0 definitions and 0 instances.                                                 (00:00.000 / 00:00.981, 1Gb)
+Sushi: info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources                             (00:00.083 / 00:01.064, 1Gb)
+Sushi: info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 0.5.0                          (00:00.561 / 00:01.625, 1Gb)
+Sushi: info  Loaded hl7.fhir.uv.tools.r4#0.5.0 with 88 resources                                     (00:00.039 / 00:01.665, 1Gb)
+Sushi: info  Resolved hl7.terminology.r4#latest to concrete version 6.4.0                            (00:00.126 / 00:01.792, 1Gb)
+Sushi: info  Loaded hl7.terminology.r4#6.4.0 with 4381 resources                                     (00:00.999 / 00:02.791, 1Gb)
+Sushi: info  Resolved hl7.fhir.uv.extensions.r4#latest to concrete version 5.2.0                     (00:00.122 / 00:02.914, 1Gb)
+Sushi: info  Loaded hl7.fhir.uv.extensions.r4#5.2.0 with 759 resources                               (00:00.175 / 00:03.089, 1Gb)
+Sushi: info  Loaded smart.who.int.base#0.1.0 with 17 resources                                       (00:00.012 / 00:03.102, 1Gb)
+Sushi: info  Loaded hl7.fhir.r4.core#4.0.1 with 4581 resources                                       (00:00.915 / 00:04.017, 1Gb)
+Sushi: info  Found 1 non-JSON / non-XML file(s) in directory: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/input/examples. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging. (00:00.009 / 00:04.026, 1Gb)
+Sushi: info  Found 1 non-JSON / non-XML file(s) in directory: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/input/extensions. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging. (00:00.001 / 00:04.028, 1Gb)
+Sushi: info  Found 1 non-JSON / non-XML file(s) in directory: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/input/models. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging. (00:00.001 / 00:04.030, 1Gb)
+Sushi: info  Found 1 non-JSON / non-XML file(s) in directory: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/input/profiles. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging. (00:00.002 / 00:04.033, 1Gb)
+Sushi: info  Found 1 non-JSON / non-XML file(s) in directory: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/input/resources. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging. (00:00.001 / 00:04.034, 1Gb)
+Sushi: info  Found 1 non-JSON / non-XML file(s) in directory: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/input/vocabulary. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging. (00:00.001 / 00:04.036, 1Gb)
+Sushi: info  Loaded virtual package sushi-local#LOCAL with 0 resources                               (00:00.001 / 00:04.037, 1Gb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.010 / 00:04.048, 1Gb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.006 / 00:04.054, 1Gb)
+Sushi: info  Exported 0 FHIR resources as JSON.                                                      (00:00.000 / 00:04.055, 1Gb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.003 / 00:04.058, 1Gb)
+Sushi: info  Generated ImplementationGuide-smart.who.int.dak-bds.json                                (00:00.028 / 00:04.087, 1Gb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.000 / 00:04.088, 1Gb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.000 / 00:04.088, 1Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:04.089, 1Gb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.000 / 00:04.090, 1Gb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:04.090, 1Gb)
+Sushi: | |       0       |      0       |      0       |       0       | |                           (00:00.000 / 00:04.091, 1Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:04.091, 1Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:04.092, 1Gb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.000 / 00:04.093, 1Gb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:04.093, 1Gb)
+Sushi: | |         0          |         0         |         0          | |                           (00:00.000 / 00:04.094, 1Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:04.094, 1Gb)
+Sushi: |                                                                 |                           (00:00.000 / 00:04.095, 1Gb)
+Sushi: ===================================================================                           (00:00.000 / 00:04.095, 1Gb)
+Sushi: | You rock, lobster!                     0 Errors      0 Warnings |                           (00:00.000 / 00:04.096, 1Gb)
+Sushi: ===================================================================                           (00:00.000 / 00:04.096, 1Gb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.012 / 00:04.109, 1Gb)
+Load Template from who.template.root#current                                                         (00:00.022 / 00:04.131, 1Gb)
+ Load Template from fhir.base.template#current                                                       (00:00.625 / 00:04.756, 1Gb)
+Root directory: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone                      (00:01.699 / 00:06.456, 1Gb)
+Terminology Cache is at /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/input-cache/txcache. 5 files in cache (00:00.361 / 00:06.818, 1Gb)
+Core Package hl7.fhir.r4.core#4.0.1
+Running Terminology Log: /tmp/ohfu-fhir-ig-13838687007144970467.html
+Connect to Terminology Server at http://tx.fhir.org                                                  (00:01.539 / 00:08.357, 1Gb)
+Load Package hl7.fhir.pubpack#0.2.3
+Load Package hl7.fhir.xver-extensions#0.1.0
+Load Package hl7.terminology.r4#6.4.0
+Load Package hl7.fhir.uv.extensions.r4#5.2.0
+Load Package hl7.fhir.uv.extensions.r4#1.0.0
+Load Package hl7.terminology#5.5.0
+Load Package hl7.fhir.uv.extensions.r4#5.1.0
+Load Package hl7.fhir.uv.cql#1.0.0
+Load Package hl7.fhir.uv.crmi#1.0.0
+Ignore Dependency on Core FHIR hl7.fhir.r4.examples#4.0.1, from package 'hl7.fhir.uv.sdc#3.0.0'      (00:05.638 / 00:13.996, 856Mb)
+Load Package hl7.fhir.uv.sdc#3.0.0
+Load Package smart.who.int.base#0.1.0
+Load Package hl7.fhir.uv.tools.r4#0.5.0
+Load R5 Specials
+Initialization complete                                                                              (00:01.444 / 00:15.440, 676Mb)
+Load IG                                                                                              (00:00.001 / 00:15.441, 676Mb)
+Load Content                                                                                         (00:00.000 / 00:15.442, 676Mb)
+Using en-US as the default narrative language. (no language information in Implementation Guide)     (00:00.015 / 00:15.457, 681Mb)
+Process Loaded Resources                                                                             (00:00.020 / 00:15.477, 683Mb)
+Generating Snapshots                                                                                 (00:00.012 / 00:15.489, 688Mb)
+loadPrePages from FetchedFile[/workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/fsh-generated/includes] as /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/fsh-generated/includes
+loadPrePages from FetchedFile[/workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/input/data] as /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/input/data
+loadPrePages from FetchedFile[/workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/input/pagecontent] as /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/input/pagecontent
+Fetch http://smart.who.int/dak-bds/package-list.json for version check                               (00:00.015 / 00:15.505, 688Mb)
+Processing Conformance Resources                                                                     (00:00.017 / 00:15.523, 690Mb)
+Checking Language                                                                                    (00:00.000 / 00:15.524, 690Mb)
+Load Dependency Info                                                                                 (00:00.000 / 00:15.524, 690Mb)
+Load Info                                                                                            (00:00.000 / 00:15.525, 690Mb)
+Load Paths                                                                                           (00:00.000 / 00:15.526, 691Mb)
+Check R4 / R4B                                                                                       (00:00.000 / 00:15.527, 691Mb)
+Assign Comparison Ids                                                                                (00:00.006 / 00:15.534, 692Mb)
+Propagating status                                                                                   (00:00.000 / 00:15.534, 692Mb)
+Generating Narratives                                                                                (00:00.000 / 00:15.535, 692Mb)
+Validating Conformance Resources                                                                     (00:00.296 / 00:15.832, 701Mb)
+Check profiles & code systems                                                                        (00:09.170 / 00:25.003, 638Mb)
+Check realm rules                                                                                    (00:00.001 / 00:25.004, 638Mb)
+Previous Version Comparison                                                                          (00:00.000 / 00:25.005, 638Mb)
+Validating Resources                                                                                 (00:00.004 / 00:25.009, 638Mb)
+Processing Provenance Records                                                                        (00:00.001 / 00:25.011, 638Mb)
+Generating Outputs in /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/output         (00:00.000 / 00:25.012, 638Mb)
+Generate Native Outputs                                                                              (00:00.066 / 00:25.078, 644Mb)
+Run Template                                                                                         (00:00.052 / 00:25.131, 654Mb)
+Generate HTML Outputs                                                                                (00:00.485 / 00:25.616, 691Mb)
+Generate Spreadsheets                                                                                (00:00.049 / 00:25.666, 704Mb)
+Generate Summaries                                                                                   (00:00.001 / 00:25.668, 704Mb)
+Generating Summary Outputs                                                                           (00:00.001 / 00:25.669, 704Mb)
+DB Cumulative Time invested: 00:00:00.50
+Sending Usage Stats to Server                                                                        (00:07.958 / 00:33.627, 1Gb)
+## Memory (MB): Use = 1140, Free = 663, Total = 1804, Max = 4096                                     (00:00.001 / 00:33.628, 1Gb)
+Reclaiming memory...                                                                                 (00:00.000 / 00:33.629, 1Gb)
+## Memory (MB): Use = 859, Free = 944, Total = 1804, Max = 4096                                      (00:00.405 / 00:34.035, 860Mb)
+Run jekyll: jekyll build --destination "/workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/output" (in folder /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/temp/pages) (00:00.001 / 00:34.037, 860Mb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.001 / 00:34.038, 860Mb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.000 / 00:34.039, 860Mb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.000 / 00:34.040, 860Mb)
+Jekyll: Source: /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/temp/pages           (00:00.343 / 00:34.383, 862Mb)
+Jekyll: Generating...                                                                                (00:00.001 / 00:34.384, 862Mb)
+Jekyll: done in 0.434 seconds.                                                                       (00:00.433 / 00:34.817, 862Mb)
+
+Installing smart.who.int.dak-bds#1.0.0
+Checking Output HTML                                                                                 (00:00.064 / 00:34.881, 871Mb)
+found 601 files                                                                                      (00:00.004 / 00:34.886, 871Mb)
+........................................
+........................................
+  ... 601 html files, 0 pages invalid xhtml (0%)                                                     (00:00.416 / 00:35.303, 1Gb)
+  ... 1827 links, 0 broken links (0%)                                                                (00:00.000 / 00:35.304, 1Gb)
+Generate fragment-usage-analysis.csv                                                                 (00:00.000 / 00:35.304, 1Gb)
+Build final .zip                                                                                     (00:00.008 / 00:35.313, 1Gb)
+Final .zip built                                                                                     (00:00.600 / 00:35.914, 1Gb)
+Built. Times: loading: 00:00.081, generate: 00:22.665, narrative generation: 00:00.296, validation: 00:09.169, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:00.787, template: 00:00.491 (#3) (00:02.274 / 00:38.189, 936Mb)
+Generating QA                                                                                        (00:00.001 / 00:38.190, 936Mb)
+Validation output in /workspace/temp/ig-builds/smart.who.int.dak-bds#1.0.0-milestone/output/qa.html
+Errors: 2, Warnings: 7, Info: 0, Broken Links: 0 (00:00.042 / 00:38.233, 942Mb)
+Finished. Max Memory Used = 1Gb. Log file saved in /tmp/fhir-ig-publisher-tmp.log                    (00:00.001 / 00:38.234, 942Mb)
+Keep a copy of the build directory at /workspace/temp/web-root/run-20250613/ig-build-zips/smart.who.int.dak-bds#1.0.0.zip
+
+ok. All checks passed. Publish v1.0.0 to /workspace/temp/web-root/run-20250613/dak-bds/v1.0.0
+Copy the IG to /workspace/temp/web-root/run-20250613/dak-bds/v1.0.0
+Update /workspace/temp/web-root/run-20250613/dak-bds/package-list.json
+Publish Box Statement: This page is part of the SMART DAK BDS (v1.0.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/dak-bds/history.html">Directory of published versions</a>
+  .. 35 files checked, 35 updated
+  .. 5 clones checked, 10 updated
+  .. 1 redirections (1 created/updated)
+This is a milestone release - publish v1.0.0 to /workspace/temp/web-root/run-20250613/dak-bds
+Publish Box Statement: This page is part of the SMART DAK BDS (v1.0.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/dak-bds/history.html">Directory of published versions</a>
+  .. 35 files checked, 35 updated
+  .. 5 clones checked, 10 updated
+  .. 1 redirections (1 created/updated)
+Check for Files to delete
+  ... 0 files
+Copy to new IG /workspace/temp/web-root/run-20250613/dak-bds
+[Fatal Error] :1:1: Content is not allowed in prolog.
+Unable to process RSS feed /workspace/temp/web-root/run-20250613/publication-feed.xml as XML - processing as text instead (Content is not allowed in prolog.)
+smart.who.int.dak-bds (http://smart.who.int/dak-bds): SMART DAK BDS @ http://worldhealthorganization.github.io/smart-dak-bds
+  release: Releases 1.0.0/4.0.1 @ http://smart.who.int/dak-bds/v1.0.0
+Build is complete. Copy from /workspace/temp/web-root/run-20250613
+Update history page at /workspace/temp/web-root/run-20250613/dak-bds from /workspace/history-template and /workspace/webroot/templates
