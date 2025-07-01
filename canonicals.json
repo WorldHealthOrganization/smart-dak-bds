@@ -1,0 +1,842 @@
+[
+  {
+    "id" : "FXREQCategories",
+    "type" : "CodeSystem",
+    "url" : "http://smart.who.int/dak-bds/CodeSystem/FXREQCategories",
+    "version" : "1.0.1",
+    "name" : "FXREQCategories"
+  },
+  {
+    "id" : "smart.who.int.dak-bds",
+    "type" : "ImplementationGuide",
+    "url" : "http://smart.who.int/dak-bds/ImplementationGuide/smart.who.int.dak-bds",
+    "version" : "1.0.1",
+    "name" : "DAKBds"
+  },
+  {
+    "id" : "BDS.FXNREQ.1",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.1",
+    "version" : "1.0.1",
+    "name" : "The system to require me (a user) to search to see whether the case record is already in the system before starting a new entry"
+  },
+  {
+    "id" : "BDS.FXNREQ.10",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.10",
+    "version" : "1.0.1",
+    "name" : "To be able to update demographic information of newborn/mother/informant"
+  },
+  {
+    "id" : "BDS.FXNREQ.11",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.11",
+    "version" : "1.0.1",
+    "name" : "The system to retain history of updated information on the case record (e.g. observation notes)"
+  },
+  {
+    "id" : "BDS.FXNREQ.12",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.12",
+    "version" : "1.0.1",
+    "name" : "To be able to attach an identifier (e.g. QR code, barcode, fingerprint, photo) to the newborn's or mother's record based on national standards consent"
+  },
+  {
+    "id" : "BDS.FXNREQ.13",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.13",
+    "version" : "1.0.1",
+    "name" : "To bypass the standard flow as needed and jump between sections, except when local protocols demand consent to proceed"
+  },
+  {
+    "id" : "BDS.FXNREQ.14",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.14",
+    "version" : "1.0.1",
+    "name" : "The system to support me with visually identifying a birth defect by providing information about possible defects and syndromes (including photos, descriptions and ICD codes based on the WHO QRH) when I indicate on the screen an anatomical region of the newborn"
+  },
+  {
+    "id" : "BDS.FXNREQ.15",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.15",
+    "version" : "1.0.1",
+    "name" : "To have the ability to upload images and videos of the birth defect in the birth defects surveillance application or system"
+  },
+  {
+    "id" : "BDS.FXNREQ.16",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.16",
+    "version" : "1.0.1",
+    "name" : "The system to delete images and videos automatically from the device, once uploaded into the birth defects surveillance system, if required by  local protocols"
+  },
+  {
+    "id" : "BDS.FXNREQ.17",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.17",
+    "version" : "1.0.1",
+    "name" : "To have the possibility to see or visualize medical data and previous measurements (log history) "
+  },
+  {
+    "id" : "BDS.FXNREQ.18",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.18",
+    "version" : "1.0.1",
+    "name" : "The birth defects surveillance system to notify the birth defects specialist that a case needs to be reviewed using an application notification, email, SMS or other method"
+  },
+  {
+    "id" : "BDS.FXNREQ.19",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.19",
+    "version" : "1.0.1",
+    "name" : "The system to support with the necessary information related to case inclusion criteria, if it is stored in the system\n"
+  },
+  {
+    "id" : "BDS.FXNREQ.2",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.2",
+    "version" : "1.0.1",
+    "name" : "The system to return all potential matches based on search criteria"
+  },
+  {
+    "id" : "BDS.FXNREQ.20",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.20",
+    "version" : "1.0.1",
+    "name" : "To be able to send the final determination regarding the diagnosis back to the care provider using an application notification, email, SMS or other method, if required by the local protocol"
+  },
+  {
+    "id" : "BDS.FXNREQ.21",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.21",
+    "version" : "1.0.1",
+    "name" : "To be able to flag issues with a case and send that case to the surveillance data manager for review and follow up"
+  },
+  {
+    "id" : "BDS.FXNREQ.22",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.22",
+    "version" : "1.0.1",
+    "name" : "To be able to flag issues with a case and send that case to the data collector"
+  },
+  {
+    "id" : "BDS.FXNREQ.23",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.23",
+    "version" : "1.0.1",
+    "name" : "The birth defects surveillance system to notify the surveillance data manager that the case has been updated with the missing information, using an application notification, email, SMS or other method"
+  },
+  {
+    "id" : "BDS.FXNREQ.24",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.24",
+    "version" : "1.0.1",
+    "name" : "To have the ability to aggregate the data by time period and surveillance population"
+  },
+  {
+    "id" : "BDS.FXNREQ.25",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.25",
+    "version" : "1.0.1",
+    "name" : "The system to automatically calculate indicators based on preset rules"
+  },
+  {
+    "id" : "BDS.FXNREQ.26",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.26",
+    "version" : "1.0.1",
+    "name" : "To have the ability to query the data to look for issues of data quality"
+  },
+  {
+    "id" : "BDS.FXNREQ.27",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.27",
+    "version" : "1.0.1",
+    "name" : "To have the ability to make changes to the data (case records)"
+  },
+  {
+    "id" : "BDS.FXNREQ.28",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.28",
+    "version" : "1.0.1",
+    "name" : "To have the ability to deidentify the data and prepare the database for analysis and reporting"
+  },
+  {
+    "id" : "BDS.FXNREQ.29",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.29",
+    "version" : "1.0.1",
+    "name" : "To be able to configure report parameters when generating reports such as time range, geography and other details"
+  },
+  {
+    "id" : "BDS.FXNREQ.3",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.3",
+    "version" : "1.0.1",
+    "name" : "The system to display sufficient data to identify the case"
+  },
+  {
+    "id" : "BDS.FXNREQ.30",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.30",
+    "version" : "1.0.1",
+    "name" : "To produce reports based on stored templates"
+  },
+  {
+    "id" : "BDS.FXNREQ.31",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.31",
+    "version" : "1.0.1",
+    "name" : "The birth defects surveillance system to notify the surveillance programme manager when a report is marked as ready for their review, using an application notification, email, SMS or other method"
+  },
+  {
+    "id" : "BDS.FXNREQ.32",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.32",
+    "version" : "1.0.1",
+    "name" : "To have the possibility to download the data to my own programme data centre"
+  },
+  {
+    "id" : "BDS.FXNREQ.33",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.33",
+    "version" : "1.0.1",
+    "name" : "To have the ability to see a summary of all birth defects cases captured in the health facilities participating in the surveillance system"
+  },
+  {
+    "id" : "BDS.FXNREQ.34",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.34",
+    "version" : "1.0.1",
+    "name" : "To approve the generated report using a digital signature or other method appropriate for the local context"
+  },
+  {
+    "id" : "BDS.FXNREQ.35",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.35",
+    "version" : "1.0.1",
+    "name" : "The birth defects surveillance system to automatically send the reports I submit, by email, to a preconfigured distribution list "
+  },
+  {
+    "id" : "BDS.FXNREQ.36",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.36",
+    "version" : "1.0.1",
+    "name" : "The birth defects surveillance system to automatically make the reports I submit available in the system's data portal, if one exists"
+  },
+  {
+    "id" : "BDS.FXNREQ.37",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.37",
+    "version" : "1.0.1",
+    "name" : "To view a range of standardized visualizations (e.g. charts, tables, maps)"
+  },
+  {
+    "id" : "BDS.FXNREQ.4",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.4",
+    "version" : "1.0.1",
+    "name" : "The search to match on partial information (e.g. partial birth dates)"
+  },
+  {
+    "id" : "BDS.FXNREQ.5",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.5",
+    "version" : "1.0.1",
+    "name" : "The system to allow search parameters configuration (e.g. mandatory fields, when partial information is acceptable)"
+  },
+  {
+    "id" : "BDS.FXNREQ.6",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.6",
+    "version" : "1.0.1",
+    "name" : "To search with wildcards (using a symbol to replace one or more characters)"
+  },
+  {
+    "id" : "BDS.FXNREQ.7",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.7",
+    "version" : "1.0.1",
+    "name" : "To create a new case record with a unique ID and timestamp of record creation"
+  },
+  {
+    "id" : "BDS.FXNREQ.8",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.8",
+    "version" : "1.0.1",
+    "name" : "to be able to retrieve client information (e.g. newborn, mother, father) from existing electronic medical records and link it to the case record"
+  },
+  {
+    "id" : "BDS.FXNREQ.9",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.9",
+    "version" : "1.0.1",
+    "name" : "To be able to collect digital signatures from clients, if acceptable according to the local protocols"
+  },
+  {
+    "id" : "BDS.NFXNREQ.1",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.1",
+    "version" : "1.0.1",
+    "name" : "Provide password-protected access for authorized users"
+  },
+  {
+    "id" : "BDS.NFXNREQ.10",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.10",
+    "version" : "1.0.1",
+    "name" : "Notify user to change password the first time they log in"
+  },
+  {
+    "id" : "BDS.NFXNREQ.11",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.11",
+    "version" : "1.0.1",
+    "name" : "Adhere to complex password requirements"
+  },
+  {
+    "id" : "BDS.NFXNREQ.12",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.12",
+    "version" : "1.0.1",
+    "name" : "Provide mechanism to securely change a user's password"
+  },
+  {
+    "id" : "BDS.NFXNREQ.13",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.13",
+    "version" : "1.0.1",
+    "name" : "Notify user of password change to their account"
+  },
+  {
+    "id" : "BDS.NFXNREQ.14",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.14",
+    "version" : "1.0.1",
+    "name" : "Reset user's password in a secure manner"
+  },
+  {
+    "id" : "BDS.NFXNREQ.15",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.15",
+    "version" : "1.0.1",
+    "name" : "Lock out user after a specified number of wrong password attempts"
+  },
+  {
+    "id" : "BDS.NFXNREQ.16",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.16",
+    "version" : "1.0.1",
+    "name" : "Notify user if their account is locked due to wrong password attempts"
+  },
+  {
+    "id" : "BDS.NFXNREQ.17",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.17",
+    "version" : "1.0.1",
+    "name" : "Require each user to authenticate by role before gaining access to the system"
+  },
+  {
+    "id" : "BDS.NFXNREQ.18",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.18",
+    "version" : "1.0.1",
+    "name" : "Log system logins and logouts"
+  },
+  {
+    "id" : "BDS.NFXNREQ.19",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.19",
+    "version" : "1.0.1",
+    "name" : "Record all authentication violations"
+  },
+  {
+    "id" : "BDS.NFXNREQ.2",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.2",
+    "version" : "1.0.1",
+    "name" : "Provide a means to ensure confidentiality and privacy of personal health information"
+  },
+  {
+    "id" : "BDS.NFXNREQ.20",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.20",
+    "version" : "1.0.1",
+    "name" : "Log all activities performed by the user, including date- and timestamp"
+  },
+  {
+    "id" : "BDS.NFXNREQ.21",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.21",
+    "version" : "1.0.1",
+    "name" : "Log access to views of individual client records"
+  },
+  {
+    "id" : "BDS.NFXNREQ.22",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.22",
+    "version" : "1.0.1",
+    "name" : "Log access to data summaries, reports, analysis and visualization features"
+  },
+  {
+    "id" : "BDS.NFXNREQ.23",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.23",
+    "version" : "1.0.1",
+    "name" : "Log exchange of data with other systems"
+  },
+  {
+    "id" : "BDS.NFXNREQ.24",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.24",
+    "version" : "1.0.1",
+    "name" : "Generate analysis of the usage of different system features and reports"
+  },
+  {
+    "id" : "BDS.NFXNREQ.25",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.25",
+    "version" : "1.0.1",
+    "name" : "Log all data and system errors"
+  },
+  {
+    "id" : "BDS.NFXNREQ.26",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.26",
+    "version" : "1.0.1",
+    "name" : "Permit independent security audits to check security compliance on a regular basis, if required by protocol"
+  },
+  {
+    "id" : "BDS.NFXNREQ.27",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.27",
+    "version" : "1.0.1",
+    "name" : "Allow user with permission to create a new user and temporary password"
+  },
+  {
+    "id" : "BDS.NFXNREQ.28",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.28",
+    "version" : "1.0.1",
+    "name" : "Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing"
+  },
+  {
+    "id" : "BDS.NFXNREQ.29",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.29",
+    "version" : "1.0.1",
+    "name" : "Allow roles to be associated with specific geographical areas and/or health-care facilities"
+  },
+  {
+    "id" : "BDS.NFXNREQ.3",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.3",
+    "version" : "1.0.1",
+    "name" : "No personally identifiable information could be shared from the local device in the country to a cloud server or other servers out of the country"
+  },
+  {
+    "id" : "BDS.NFXNREQ.30",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.30",
+    "version" : "1.0.1",
+    "name" : "Allow cascading user management and assignment of roles"
+  },
+  {
+    "id" : "BDS.NFXNREQ.31",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.31",
+    "version" : "1.0.1",
+    "name" : "Allow user to change their own password"
+  },
+  {
+    "id" : "BDS.NFXNREQ.32",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.32",
+    "version" : "1.0.1",
+    "name" : "Allow admin user to request password reset"
+  },
+  {
+    "id" : "BDS.NFXNREQ.33",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.33",
+    "version" : "1.0.1",
+    "name" : "Notify user to regularly change their password"
+  },
+  {
+    "id" : "BDS.NFXNREQ.34",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.34",
+    "version" : "1.0.1",
+    "name" : "Provide a unique version number for each revision"
+  },
+  {
+    "id" : "BDS.NFXNREQ.35",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.35",
+    "version" : "1.0.1",
+    "name" : "Generate IDs that are unique across different installations or sites"
+  },
+  {
+    "id" : "BDS.NFXNREQ.36",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.36",
+    "version" : "1.0.1",
+    "name" : "Report version number when saving data to the database"
+  },
+  {
+    "id" : "BDS.NFXNREQ.37",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.37",
+    "version" : "1.0.1",
+    "name" : "Show the number of records that are not yet synchronized"
+  },
+  {
+    "id" : "BDS.NFXNREQ.38",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.38",
+    "version" : "1.0.1",
+    "name" : "Provide capacity of the solution to be linked to data visualizer tool (e.g. Pw Bi, DHIS2)"
+  },
+  {
+    "id" : "BDS.NFXNREQ.39",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.39",
+    "version" : "1.0.1",
+    "name" : "Provide capacity of the solution to extensive reporting and analytic capabilities (e.g. export CSV files/usage metrics/built-in reporting and analytics)"
+  },
+  {
+    "id" : "BDS.NFXNREQ.4",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.4",
+    "version" : "1.0.1",
+    "name" : "Provide ability for allowed users to view confidential data"
+  },
+  {
+    "id" : "BDS.NFXNREQ.40",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.40",
+    "version" : "1.0.1",
+    "name" : "Must have ability to store images and other unstructured data"
+  },
+  {
+    "id" : "BDS.NFXNREQ.41",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.41",
+    "version" : "1.0.1",
+    "name" : "Enable system deployment in environments subject to power loss"
+  },
+  {
+    "id" : "BDS.NFXNREQ.42",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.42",
+    "version" : "1.0.1",
+    "name" : "Work in environments subject to loss of connectivity"
+  },
+  {
+    "id" : "BDS.NFXNREQ.43",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.43",
+    "version" : "1.0.1",
+    "name" : "Enable earlier versions of records to be recoverable"
+  },
+  {
+    "id" : "BDS.NFXNREQ.44",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.44",
+    "version" : "1.0.1",
+    "name" : "Have ability to easily back up information"
+  },
+  {
+    "id" : "BDS.NFXNREQ.45",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.45",
+    "version" : "1.0.1",
+    "name" : "Warn user if no valid backup for more than a predefined number of days"
+  },
+  {
+    "id" : "BDS.NFXNREQ.46",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.46",
+    "version" : "1.0.1",
+    "name" : "Be able to revert to the latest functional version of the solution without losing data (server backup/restore, disaster recovery plan)"
+  },
+  {
+    "id" : "BDS.NFXNREQ.47",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.47",
+    "version" : "1.0.1",
+    "name" : "Scalable to accommodate new demands"
+  },
+  {
+    "id" : "BDS.NFXNREQ.48",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.48",
+    "version" : "1.0.1",
+    "name" : "Be able to accommodate at least [x number of]a health-care facilities"
+  },
+  {
+    "id" : "BDS.NFXNREQ.49",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.49",
+    "version" : "1.0.1",
+    "name" : "Be able to accommodate at least [x number of]a concurrent users"
+  },
+  {
+    "id" : "BDS.NFXNREQ.5",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.5",
+    "version" : "1.0.1",
+    "name" : "Anonymize data exported from the system"
+  },
+  {
+    "id" : "BDS.NFXNREQ.50",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.50",
+    "version" : "1.0.1",
+    "name" : "Be user-friendly for people with low computer literacy"
+  },
+  {
+    "id" : "BDS.NFXNREQ.51",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.51",
+    "version" : "1.0.1",
+    "name" : "Provide informative error messages and tool-tips"
+  },
+  {
+    "id" : "BDS.NFXNREQ.52",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.52",
+    "version" : "1.0.1",
+    "name" : "Alert user when navigating away from a form without saving"
+  },
+  {
+    "id" : "BDS.NFXNREQ.53",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.53",
+    "version" : "1.0.1",
+    "name" : "Support real-time data-entry validation and feedback to prevent data-entry errors from being recorded"
+  },
+  {
+    "id" : "BDS.NFXNREQ.54",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.54",
+    "version" : "1.0.1",
+    "name" : "Simplify data recording through predefined dropdown menu or searchable lists, radio buttons or checkboxes"
+  },
+  {
+    "id" : "BDS.NFXNREQ.55",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.55",
+    "version" : "1.0.1",
+    "name" : "Support multiple languages"
+  },
+  {
+    "id" : "BDS.NFXNREQ.56",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.56",
+    "version" : "1.0.1",
+    "name" : "Use industry standard user interface practices and apply them consistently throughout the system"
+  },
+  {
+    "id" : "BDS.NFXNREQ.57",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.57",
+    "version" : "1.0.1",
+    "name" : "Easy to learn and intuitive to enable user to navigate between pages"
+  },
+  {
+    "id" : "BDS.NFXNREQ.58",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.58",
+    "version" : "1.0.1",
+    "name" : "Provide guidance to users to better support clinical guidelines and best clinical practices"
+  },
+  {
+    "id" : "BDS.NFXNREQ.59",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.59",
+    "version" : "1.0.1",
+    "name" : "Be reliable and robust (minimize the number of system crashes)"
+  },
+  {
+    "id" : "BDS.NFXNREQ.6",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.6",
+    "version" : "1.0.1",
+    "name" : "Prevent remembering username and password"
+  },
+  {
+    "id" : "BDS.NFXNREQ.60",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.60",
+    "version" : "1.0.1",
+    "name" : "Adjust display to fit small screens (e.g. on mobile phones)"
+  },
+  {
+    "id" : "BDS.NFXNREQ.61",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.61",
+    "version" : "1.0.1",
+    "name" : "Allow adaptability to multiple operating systems (e.g. Windows, Linux, IOS, Android)"
+  },
+  {
+    "id" : "BDS.NFXNREQ.62",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.62",
+    "version" : "1.0.1",
+    "name" : "Compatible with range of mobile devices, including smartphones and tablets"
+  },
+  {
+    "id" : "BDS.NFXNREQ.63",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.63",
+    "version" : "1.0.1",
+    "name" : "Accept data from multiple input methods, including paper and geocoding (GPS)"
+  },
+  {
+    "id" : "BDS.NFXNREQ.64",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.64",
+    "version" : "1.0.1",
+    "name" : "Provide user guidelines and training materials to effectively use the IT solution"
+  },
+  {
+    "id" : "BDS.NFXNREQ.65",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.65",
+    "version" : "1.0.1",
+    "name" : "Provide technical documentation of the IT solution (e.g. system architecture documentation, application programming interface (API) documentation)"
+  },
+  {
+    "id" : "BDS.NFXNREQ.66",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.66",
+    "version" : "1.0.1",
+    "name" : "Configure system centrally"
+  },
+  {
+    "id" : "BDS.NFXNREQ.67",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.67",
+    "version" : "1.0.1",
+    "name" : "Configure business rules in line with guidelines and standard operating procedures"
+  },
+  {
+    "id" : "BDS.NFXNREQ.68",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.68",
+    "version" : "1.0.1",
+    "name" : "Configure error messages"
+  },
+  {
+    "id" : "BDS.NFXNREQ.69",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.69",
+    "version" : "1.0.1",
+    "name" : "Configure workflows and business rules to accommodate differences between facilities"
+  },
+  {
+    "id" : "BDS.NFXNREQ.7",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.7",
+    "version" : "1.0.1",
+    "name" : "Automatically log out the user after specified time of inactivity"
+  },
+  {
+    "id" : "BDS.NFXNREQ.70",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.70",
+    "version" : "1.0.1",
+    "name" : "Store important system documents and information such as protocols, case inclusion criteria, surveillance population and similar important facets of the system, and make them available for retrieval as needed"
+  },
+  {
+    "id" : "BDS.NFXNREQ.71",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.71",
+    "version" : "1.0.1",
+    "name" : "Provide ability to create, read, update and delete report templates to use for automated reporting"
+  },
+  {
+    "id" : "BDS.NFXNREQ.72",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.72",
+    "version" : "1.0.1",
+    "name" : "Communicate with external systems through mediators"
+  },
+  {
+    "id" : "BDS.NFXNREQ.73",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.73",
+    "version" : "1.0.1",
+    "name" : "Provide access to data through APIs"
+  },
+  {
+    "id" : "BDS.NFXNREQ.74",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.74",
+    "version" : "1.0.1",
+    "name" : "Link with insurance systems to verify eligibility and submit claims"
+  },
+  {
+    "id" : "BDS.NFXNREQ.75",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.75",
+    "version" : "1.0.1",
+    "name" : "Allow for data exchange and efficient synchronization across multiple facilities and points of service when Internet is available, even when it is intermittent and slow"
+  },
+  {
+    "id" : "BDS.NFXNREQ.76",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.76",
+    "version" : "1.0.1",
+    "name" : "Architecture of the solution is consistent with architecture of HIS"
+  },
+  {
+    "id" : "BDS.NFXNREQ.77",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.77",
+    "version" : "1.0.1",
+    "name" : "Solution should use international coding standards for data whenever possible\nCountries can develop their own local coding system, but WHO recommends use of ICD-10 coding system to classify congenital anomalies for international reporting and comparisons"
+  },
+  {
+    "id" : "BDS.NFXNREQ.78",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.78",
+    "version" : "1.0.1",
+    "name" : "The system should be able to integrate with other approved systems, such as electronic medical records and public health databases, to allow for seamless data sharing and analysis"
+  },
+  {
+    "id" : "BDS.NFXNREQ.79",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.79",
+    "version" : "1.0.1",
+    "name" : "A birth defects surveillance mobile application should be able to function as a standalone (for training purposes, small-scale surveillance or other uses) and/or contribute data to a centralized database, depending on local protocols"
+  },
+  {
+    "id" : "BDS.NFXNREQ.8",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.8",
+    "version" : "1.0.1",
+    "name" : "Provide encrypted communication between components"
+  },
+  {
+    "id" : "BDS.NFXNREQ.80",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.80",
+    "version" : "1.0.1",
+    "name" : "If possible, the system should be embedded into the maternal/neonatal information system as an additional module"
+  },
+  {
+    "id" : "BDS.NFXNREQ.9",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-bds/Requirements/BDS.NFXNREQ.9",
+    "version" : "1.0.1",
+    "name" : "Access to data, data transfer and data storage are secured (encrypted)"
+  },
+  {
+    "id" : "FXREQCategories",
+    "type" : "ValueSet",
+    "url" : "http://smart.who.int/dak-bds/ValueSet/FXREQCategories",
+    "version" : "1.0.1",
+    "name" : "FXREQCategories"
+  }
+]

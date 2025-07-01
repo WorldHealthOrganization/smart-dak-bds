@@ -1,0 +1,3722 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "smart.who.int.dak-bds",
+  "meta" : {
+    "profile" : ["SMARTImplementationGuide"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.dak-bds</b></p><a name=\"smart.who.int.dak-bds\"> </a><a name=\"hcsmart.who.int.dak-bds\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <code>SMARTImplementationGuide</code></p></div><h2>DAKBds</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-bds/ImplementationGuide/smart.who.int.dak-bds</pre><div><p>SMART Digital Adaptation Kit (DAK) for birth defects surveillance (BDS)</p>\n</div></div>"
+  },
+  "url" : "http://smart.who.int/dak-bds/ImplementationGuide/smart.who.int.dak-bds",
+  "version" : "1.0.1",
+  "name" : "DAKBds",
+  "title" : "SMART DAK BDS",
+  "status" : "draft",
+  "date" : "2025-07-01T09:12:20+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "SMART Digital Adaptation Kit (DAK) for birth defects surveillance (BDS)",
+  "packageId" : "smart.who.int.dak-bds",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "6.4.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.2.0"
+  },
+  {
+    "id" : "smart_who_int_base",
+    "uri" : "http://smart.who.int/base/ImplementationGuide/smart.who.int.base",
+    "packageId" : "smart.who.int.base",
+    "version" : "current"
+  }],
+  "definition" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2023+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://smart.who.int/dak-bds/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2023+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://smart.who.int/dak-bds/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.79"
+      },
+      "name" : "A birth defects surveillance mobile application should be able to function as a standalone (for training purposes, small-scale surveillance or other uses) and/or contribute data to a centralized database, depending on local protocols",
+      "description" : "*Category*: System requirements – general\nA birth defects surveillance mobile application should be able to function as a standalone (for training purposes, small-scale surveillance or other uses) and/or contribute data to a centralized database, depending on local protocols",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.63"
+      },
+      "name" : "Accept data from multiple input methods, including paper and geocoding (GPS)",
+      "description" : "*Category*: System requirements – usability\nAccept data from multiple input methods, including paper and geocoding (GPS)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.9"
+      },
+      "name" : "Access to data, data transfer and data storage are secured (encrypted)",
+      "description" : "*Category*: Security – confidentiality\nAccess to data, data transfer and data storage are secured (encrypted)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.11"
+      },
+      "name" : "Adhere to complex password requirements",
+      "description" : "*Category*: Security – authentication\nAdhere to complex password requirements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.60"
+      },
+      "name" : "Adjust display to fit small screens (e.g. on mobile phones)",
+      "description" : "*Category*: System requirements – usability\nAdjust display to fit small screens (e.g. on mobile phones)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.52"
+      },
+      "name" : "Alert user when navigating away from a form without saving",
+      "description" : "*Category*: System requirements – usability\nAlert user when navigating away from a form without saving",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.61"
+      },
+      "name" : "Allow adaptability to multiple operating systems (e.g. Windows, Linux, IOS, Android)",
+      "description" : "*Category*: System requirements – usability\nAllow adaptability to multiple operating systems (e.g. Windows, Linux, IOS, Android)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.32"
+      },
+      "name" : "Allow admin user to request password reset",
+      "description" : "*Category*: Security – user management\nAllow admin user to request password reset",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.30"
+      },
+      "name" : "Allow cascading user management and assignment of roles",
+      "description" : "*Category*: Security – user management\nAllow cascading user management and assignment of roles",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.75"
+      },
+      "name" : "Allow for data exchange and efficient synchronization across multiple facilities and points of service when Internet is available, even when it is intermittent and slow",
+      "description" : "*Category*: System requirements – interoperability\nAllow for data exchange and efficient synchronization across multiple facilities and points of service when Internet is available, even when it is intermittent and slow",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.29"
+      },
+      "name" : "Allow roles to be associated with specific geographical areas and/or health-care facilities",
+      "description" : "*Category*: Security – user management\nAllow roles to be associated with specific geographical areas and/or health-care facilities",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.31"
+      },
+      "name" : "Allow user to change their own password",
+      "description" : "*Category*: Security – user management\nAllow user to change their own password",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.27"
+      },
+      "name" : "Allow user with permission to create a new user and temporary password",
+      "description" : "*Category*: Security – user management\nAllow user with permission to create a new user and temporary password",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.5"
+      },
+      "name" : "Anonymize data exported from the system",
+      "description" : "*Category*: Security – confidentiality\nAnonymize data exported from the system",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.76"
+      },
+      "name" : "Architecture of the solution is consistent with architecture of HIS",
+      "description" : "*Category*: System requirements – interoperability\nArchitecture of the solution is consistent with architecture of HIS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.7"
+      },
+      "name" : "Automatically log out the user after specified time of inactivity",
+      "description" : "*Category*: Security – confidentiality\nAutomatically log out the user after specified time of inactivity",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.49"
+      },
+      "name" : "Be able to accommodate at least [x number of]a concurrent users",
+      "description" : "*Category*: System requirements – scalability\nBe able to accommodate at least [x number of]a concurrent users",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.48"
+      },
+      "name" : "Be able to accommodate at least [x number of]a health-care facilities",
+      "description" : "*Category*: System requirements – scalability\nBe able to accommodate at least [x number of]a health-care facilities",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.46"
+      },
+      "name" : "Be able to revert to the latest functional version of the solution without losing data (server backup/restore, disaster recovery plan)",
+      "description" : "*Category*: System requirements – reliability\nBe able to revert to the latest functional version of the solution without losing data (server backup/restore, disaster recovery plan)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.59"
+      },
+      "name" : "Be reliable and robust (minimize the number of system crashes)",
+      "description" : "*Category*: System requirements – usability\nBe reliable and robust (minimize the number of system crashes)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.50"
+      },
+      "name" : "Be user-friendly for people with low computer literacy",
+      "description" : "*Category*: System requirements – usability\nBe user-friendly for people with low computer literacy",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.72"
+      },
+      "name" : "Communicate with external systems through mediators",
+      "description" : "*Category*: System requirements – interoperability\nCommunicate with external systems through mediators",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.62"
+      },
+      "name" : "Compatible with range of mobile devices, including smartphones and tablets",
+      "description" : "*Category*: System requirements – usability\nCompatible with range of mobile devices, including smartphones and tablets",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.67"
+      },
+      "name" : "Configure business rules in line with guidelines and standard operating procedures",
+      "description" : "*Category*: System requirements – configuration\nConfigure business rules in line with guidelines and standard operating procedures",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.68"
+      },
+      "name" : "Configure error messages",
+      "description" : "*Category*: System requirements – configuration\nConfigure error messages",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.66"
+      },
+      "name" : "Configure system centrally",
+      "description" : "*Category*: System requirements – configuration\nConfigure system centrally",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.69"
+      },
+      "name" : "Configure workflows and business rules to accommodate differences between facilities",
+      "description" : "*Category*: System requirements – configuration\nConfigure workflows and business rules to accommodate differences between facilities",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.57"
+      },
+      "name" : "Easy to learn and intuitive to enable user to navigate between pages",
+      "description" : "*Category*: System requirements – usability\nEasy to learn and intuitive to enable user to navigate between pages",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.43"
+      },
+      "name" : "Enable earlier versions of records to be recoverable",
+      "description" : "*Category*: System requirements – reliability\nEnable earlier versions of records to be recoverable",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.41"
+      },
+      "name" : "Enable system deployment in environments subject to power loss",
+      "description" : "*Category*: System requirements – reliability\nEnable system deployment in environments subject to power loss",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/FXREQCategories"
+      },
+      "name" : "Functional Requirement Categories",
+      "description" : "Value Set for Functional Requirement Categories. Autogenerated from DAK artifacts",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/FXREQCategories"
+      },
+      "name" : "Functional Requirement Categories",
+      "description" : "CodeSystem for Functional Requirement Categories. Autogenerated from DAK artifacts",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.24"
+      },
+      "name" : "Generate analysis of the usage of different system features and reports",
+      "description" : "*Category*: Security – audit trail and logs\nGenerate analysis of the usage of different system features and reports",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.35"
+      },
+      "name" : "Generate IDs that are unique across different installations or sites",
+      "description" : "*Category*: System requirements – general\nGenerate IDs that are unique across different installations or sites",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.44"
+      },
+      "name" : "Have ability to easily back up information",
+      "description" : "*Category*: System requirements – reliability\nHave ability to easily back up information",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.80"
+      },
+      "name" : "If possible, the system should be embedded into the maternal/neonatal information system as an additional module",
+      "description" : "*Category*: System requirements – general\nIf possible, the system should be embedded into the maternal/neonatal information system as an additional module",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.74"
+      },
+      "name" : "Link with insurance systems to verify eligibility and submit claims",
+      "description" : "*Category*: System requirements – interoperability\nLink with insurance systems to verify eligibility and submit claims",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.1"
+      },
+      "name" : "LM.BDS.NFXNREQ.1",
+      "description" : "Provide password-protected access for authorized users",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.10"
+      },
+      "name" : "LM.BDS.NFXNREQ.10",
+      "description" : "Notify user to change password the first time they log in",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.11"
+      },
+      "name" : "LM.BDS.NFXNREQ.11",
+      "description" : "Adhere to complex password requirements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.12"
+      },
+      "name" : "LM.BDS.NFXNREQ.12",
+      "description" : "Provide mechanism to securely change a user's password",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.13"
+      },
+      "name" : "LM.BDS.NFXNREQ.13",
+      "description" : "Notify user of password change to their account",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.14"
+      },
+      "name" : "LM.BDS.NFXNREQ.14",
+      "description" : "Reset user's password in a secure manner",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.15"
+      },
+      "name" : "LM.BDS.NFXNREQ.15",
+      "description" : "Lock out user after a specified number of wrong password attempts",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.16"
+      },
+      "name" : "LM.BDS.NFXNREQ.16",
+      "description" : "Notify user if their account is locked due to wrong password attempts",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.17"
+      },
+      "name" : "LM.BDS.NFXNREQ.17",
+      "description" : "Require each user to authenticate by role before gaining access to the system",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.18"
+      },
+      "name" : "LM.BDS.NFXNREQ.18",
+      "description" : "Log system logins and logouts",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.19"
+      },
+      "name" : "LM.BDS.NFXNREQ.19",
+      "description" : "Record all authentication violations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.2"
+      },
+      "name" : "LM.BDS.NFXNREQ.2",
+      "description" : "Provide a means to ensure confidentiality and privacy of personal health information",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.20"
+      },
+      "name" : "LM.BDS.NFXNREQ.20",
+      "description" : "Log all activities performed by the user, including date- and timestamp",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.21"
+      },
+      "name" : "LM.BDS.NFXNREQ.21",
+      "description" : "Log access to views of individual client records",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.22"
+      },
+      "name" : "LM.BDS.NFXNREQ.22",
+      "description" : "Log access to data summaries, reports, analysis and visualization features",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.23"
+      },
+      "name" : "LM.BDS.NFXNREQ.23",
+      "description" : "Log exchange of data with other systems",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.24"
+      },
+      "name" : "LM.BDS.NFXNREQ.24",
+      "description" : "Generate analysis of the usage of different system features and reports",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.25"
+      },
+      "name" : "LM.BDS.NFXNREQ.25",
+      "description" : "Log all data and system errors",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.26"
+      },
+      "name" : "LM.BDS.NFXNREQ.26",
+      "description" : "Permit independent security audits to check security compliance on a regular basis, if required by protocol",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.27"
+      },
+      "name" : "LM.BDS.NFXNREQ.27",
+      "description" : "Allow user with permission to create a new user and temporary password",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.28"
+      },
+      "name" : "LM.BDS.NFXNREQ.28",
+      "description" : "Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.29"
+      },
+      "name" : "LM.BDS.NFXNREQ.29",
+      "description" : "Allow roles to be associated with specific geographical areas and/or health-care facilities",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.3"
+      },
+      "name" : "LM.BDS.NFXNREQ.3",
+      "description" : "No personally identifiable information could be shared from the local device in the country to a cloud server or other servers out of the country",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.30"
+      },
+      "name" : "LM.BDS.NFXNREQ.30",
+      "description" : "Allow cascading user management and assignment of roles",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.31"
+      },
+      "name" : "LM.BDS.NFXNREQ.31",
+      "description" : "Allow user to change their own password",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.32"
+      },
+      "name" : "LM.BDS.NFXNREQ.32",
+      "description" : "Allow admin user to request password reset",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.33"
+      },
+      "name" : "LM.BDS.NFXNREQ.33",
+      "description" : "Notify user to regularly change their password",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.34"
+      },
+      "name" : "LM.BDS.NFXNREQ.34",
+      "description" : "Provide a unique version number for each revision",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.35"
+      },
+      "name" : "LM.BDS.NFXNREQ.35",
+      "description" : "Generate IDs that are unique across different installations or sites",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.36"
+      },
+      "name" : "LM.BDS.NFXNREQ.36",
+      "description" : "Report version number when saving data to the database",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.37"
+      },
+      "name" : "LM.BDS.NFXNREQ.37",
+      "description" : "Show the number of records that are not yet synchronized",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.38"
+      },
+      "name" : "LM.BDS.NFXNREQ.38",
+      "description" : "Provide capacity of the solution to be linked to data visualizer tool (e.g. Pw Bi, DHIS2)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.39"
+      },
+      "name" : "LM.BDS.NFXNREQ.39",
+      "description" : "Provide capacity of the solution to extensive reporting and analytic capabilities (e.g. export CSV files/usage metrics/built-in reporting and analytics)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.4"
+      },
+      "name" : "LM.BDS.NFXNREQ.4",
+      "description" : "Provide ability for allowed users to view confidential data",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.40"
+      },
+      "name" : "LM.BDS.NFXNREQ.40",
+      "description" : "Must have ability to store images and other unstructured data",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.41"
+      },
+      "name" : "LM.BDS.NFXNREQ.41",
+      "description" : "Enable system deployment in environments subject to power loss",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.42"
+      },
+      "name" : "LM.BDS.NFXNREQ.42",
+      "description" : "Work in environments subject to loss of connectivity",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.43"
+      },
+      "name" : "LM.BDS.NFXNREQ.43",
+      "description" : "Enable earlier versions of records to be recoverable",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.44"
+      },
+      "name" : "LM.BDS.NFXNREQ.44",
+      "description" : "Have ability to easily back up information",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.45"
+      },
+      "name" : "LM.BDS.NFXNREQ.45",
+      "description" : "Warn user if no valid backup for more than a predefined number of days",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.46"
+      },
+      "name" : "LM.BDS.NFXNREQ.46",
+      "description" : "Be able to revert to the latest functional version of the solution without losing data (server backup/restore, disaster recovery plan)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.47"
+      },
+      "name" : "LM.BDS.NFXNREQ.47",
+      "description" : "Scalable to accommodate new demands",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.48"
+      },
+      "name" : "LM.BDS.NFXNREQ.48",
+      "description" : "Be able to accommodate at least [x number of]a health-care facilities",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.49"
+      },
+      "name" : "LM.BDS.NFXNREQ.49",
+      "description" : "Be able to accommodate at least [x number of]a concurrent users",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.5"
+      },
+      "name" : "LM.BDS.NFXNREQ.5",
+      "description" : "Anonymize data exported from the system",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.50"
+      },
+      "name" : "LM.BDS.NFXNREQ.50",
+      "description" : "Be user-friendly for people with low computer literacy",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.51"
+      },
+      "name" : "LM.BDS.NFXNREQ.51",
+      "description" : "Provide informative error messages and tool-tips",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.52"
+      },
+      "name" : "LM.BDS.NFXNREQ.52",
+      "description" : "Alert user when navigating away from a form without saving",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.53"
+      },
+      "name" : "LM.BDS.NFXNREQ.53",
+      "description" : "Support real-time data-entry validation and feedback to prevent data-entry errors from being recorded",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.54"
+      },
+      "name" : "LM.BDS.NFXNREQ.54",
+      "description" : "Simplify data recording through predefined dropdown menu or searchable lists, radio buttons or checkboxes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.55"
+      },
+      "name" : "LM.BDS.NFXNREQ.55",
+      "description" : "Support multiple languages",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.56"
+      },
+      "name" : "LM.BDS.NFXNREQ.56",
+      "description" : "Use industry standard user interface practices and apply them consistently throughout the system",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.57"
+      },
+      "name" : "LM.BDS.NFXNREQ.57",
+      "description" : "Easy to learn and intuitive to enable user to navigate between pages",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.58"
+      },
+      "name" : "LM.BDS.NFXNREQ.58",
+      "description" : "Provide guidance to users to better support clinical guidelines and best clinical practices",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.59"
+      },
+      "name" : "LM.BDS.NFXNREQ.59",
+      "description" : "Be reliable and robust (minimize the number of system crashes)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.6"
+      },
+      "name" : "LM.BDS.NFXNREQ.6",
+      "description" : "Prevent remembering username and password",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.60"
+      },
+      "name" : "LM.BDS.NFXNREQ.60",
+      "description" : "Adjust display to fit small screens (e.g. on mobile phones)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.61"
+      },
+      "name" : "LM.BDS.NFXNREQ.61",
+      "description" : "Allow adaptability to multiple operating systems (e.g. Windows, Linux, IOS, Android)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.62"
+      },
+      "name" : "LM.BDS.NFXNREQ.62",
+      "description" : "Compatible with range of mobile devices, including smartphones and tablets",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.63"
+      },
+      "name" : "LM.BDS.NFXNREQ.63",
+      "description" : "Accept data from multiple input methods, including paper and geocoding (GPS)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.64"
+      },
+      "name" : "LM.BDS.NFXNREQ.64",
+      "description" : "Provide user guidelines and training materials to effectively use the IT solution",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.65"
+      },
+      "name" : "LM.BDS.NFXNREQ.65",
+      "description" : "Provide technical documentation of the IT solution (e.g. system architecture documentation, application programming interface (API) documentation)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.66"
+      },
+      "name" : "LM.BDS.NFXNREQ.66",
+      "description" : "Configure system centrally",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.67"
+      },
+      "name" : "LM.BDS.NFXNREQ.67",
+      "description" : "Configure business rules in line with guidelines and standard operating procedures",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.68"
+      },
+      "name" : "LM.BDS.NFXNREQ.68",
+      "description" : "Configure error messages",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.69"
+      },
+      "name" : "LM.BDS.NFXNREQ.69",
+      "description" : "Configure workflows and business rules to accommodate differences between facilities",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.7"
+      },
+      "name" : "LM.BDS.NFXNREQ.7",
+      "description" : "Automatically log out the user after specified time of inactivity",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.70"
+      },
+      "name" : "LM.BDS.NFXNREQ.70",
+      "description" : "Store important system documents and information such as protocols, case inclusion criteria, surveillance population and similar important facets of the system, and make them available for retrieval as needed",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.71"
+      },
+      "name" : "LM.BDS.NFXNREQ.71",
+      "description" : "Provide ability to create, read, update and delete report templates to use for automated reporting",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.72"
+      },
+      "name" : "LM.BDS.NFXNREQ.72",
+      "description" : "Communicate with external systems through mediators",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.73"
+      },
+      "name" : "LM.BDS.NFXNREQ.73",
+      "description" : "Provide access to data through APIs",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.74"
+      },
+      "name" : "LM.BDS.NFXNREQ.74",
+      "description" : "Link with insurance systems to verify eligibility and submit claims",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.75"
+      },
+      "name" : "LM.BDS.NFXNREQ.75",
+      "description" : "Allow for data exchange and efficient synchronization across multiple facilities and points of service when Internet is available, even when it is intermittent and slow",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.76"
+      },
+      "name" : "LM.BDS.NFXNREQ.76",
+      "description" : "Architecture of the solution is consistent with architecture of HIS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.77"
+      },
+      "name" : "LM.BDS.NFXNREQ.77",
+      "description" : "Solution should use international coding standards for data whenever possible\nCountries can develop their own local coding system, but WHO recommends use of ICD-10 coding system to classify congenital anomalies for international reporting and comparisons",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.78"
+      },
+      "name" : "LM.BDS.NFXNREQ.78",
+      "description" : "The system should be able to integrate with other approved systems, such as electronic medical records and public health databases, to allow for seamless data sharing and analysis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.79"
+      },
+      "name" : "LM.BDS.NFXNREQ.79",
+      "description" : "A birth defects surveillance mobile application should be able to function as a standalone (for training purposes, small-scale surveillance or other uses) and/or contribute data to a centralized database, depending on local protocols",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.8"
+      },
+      "name" : "LM.BDS.NFXNREQ.8",
+      "description" : "Provide encrypted communication between components",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.80"
+      },
+      "name" : "LM.BDS.NFXNREQ.80",
+      "description" : "If possible, the system should be embedded into the maternal/neonatal information system as an additional module",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/LM.BDS.NFXNREQ.9"
+      },
+      "name" : "LM.BDS.NFXNREQ.9",
+      "description" : "Access to data, data transfer and data storage are secured (encrypted)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.15"
+      },
+      "name" : "Lock out user after a specified number of wrong password attempts",
+      "description" : "*Category*: Security – authentication\nLock out user after a specified number of wrong password attempts",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.22"
+      },
+      "name" : "Log access to data summaries, reports, analysis and visualization features",
+      "description" : "*Category*: Security – audit trail and logs\nLog access to data summaries, reports, analysis and visualization features",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.21"
+      },
+      "name" : "Log access to views of individual client records",
+      "description" : "*Category*: Security – audit trail and logs\nLog access to views of individual client records",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.20"
+      },
+      "name" : "Log all activities performed by the user, including date- and timestamp",
+      "description" : "*Category*: Security – audit trail and logs\nLog all activities performed by the user, including date- and timestamp",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.25"
+      },
+      "name" : "Log all data and system errors",
+      "description" : "*Category*: Security – audit trail and logs\nLog all data and system errors",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.23"
+      },
+      "name" : "Log exchange of data with other systems",
+      "description" : "*Category*: Security – audit trail and logs\nLog exchange of data with other systems",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.18"
+      },
+      "name" : "Log system logins and logouts",
+      "description" : "*Category*: Security – audit trail and logs\nLog system logins and logouts",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.40"
+      },
+      "name" : "Must have ability to store images and other unstructured data",
+      "description" : "*Category*: System requirements – general\nMust have ability to store images and other unstructured data",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.3"
+      },
+      "name" : "No personally identifiable information could be shared from the local device in the country to a cloud server or other servers out of the country",
+      "description" : "*Category*: Security – confidentiality\nNo personally identifiable information could be shared from the local device in the country to a cloud server or other servers out of the country",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.16"
+      },
+      "name" : "Notify user if their account is locked due to wrong password attempts",
+      "description" : "*Category*: Security – authentication\nNotify user if their account is locked due to wrong password attempts",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.13"
+      },
+      "name" : "Notify user of password change to their account",
+      "description" : "*Category*: Security – authentication\nNotify user of password change to their account",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.10"
+      },
+      "name" : "Notify user to change password the first time they log in",
+      "description" : "*Category*: Security – authentication\nNotify user to change password the first time they log in",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.33"
+      },
+      "name" : "Notify user to regularly change their password",
+      "description" : "*Category*: Security – user management\nNotify user to regularly change their password",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.26"
+      },
+      "name" : "Permit independent security audits to check security compliance on a regular basis, if required by protocol",
+      "description" : "*Category*: Security – audit trail and logs\nPermit independent security audits to check security compliance on a regular basis, if required by protocol",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.6"
+      },
+      "name" : "Prevent remembering username and password",
+      "description" : "*Category*: Security – confidentiality\nPrevent remembering username and password",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.2"
+      },
+      "name" : "Provide a means to ensure confidentiality and privacy of personal health information",
+      "description" : "*Category*: Security – confidentiality\nProvide a means to ensure confidentiality and privacy of personal health information",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.34"
+      },
+      "name" : "Provide a unique version number for each revision",
+      "description" : "*Category*: System requirements – general\nProvide a unique version number for each revision",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.4"
+      },
+      "name" : "Provide ability for allowed users to view confidential data",
+      "description" : "*Category*: Security – confidentiality\nProvide ability for allowed users to view confidential data",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.71"
+      },
+      "name" : "Provide ability to create, read, update and delete report templates to use for automated reporting",
+      "description" : "*Category*: System requirements – configuration\nProvide ability to create, read, update and delete report templates to use for automated reporting",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.73"
+      },
+      "name" : "Provide access to data through APIs",
+      "description" : "*Category*: System requirements – interoperability\nProvide access to data through APIs",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.38"
+      },
+      "name" : "Provide capacity of the solution to be linked to data visualizer tool (e.g. Pw Bi, DHIS2)",
+      "description" : "*Category*: System requirements – general\nProvide capacity of the solution to be linked to data visualizer tool (e.g. Pw Bi, DHIS2)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.39"
+      },
+      "name" : "Provide capacity of the solution to extensive reporting and analytic capabilities (e.g. export CSV files/usage metrics/built-in reporting and analytics)",
+      "description" : "*Category*: System requirements – general\nProvide capacity of the solution to extensive reporting and analytic capabilities (e.g. export CSV files/usage metrics/built-in reporting and analytics)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.8"
+      },
+      "name" : "Provide encrypted communication between components",
+      "description" : "*Category*: Security – confidentiality\nProvide encrypted communication between components",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.58"
+      },
+      "name" : "Provide guidance to users to better support clinical guidelines and best clinical practices",
+      "description" : "*Category*: System requirements – usability\nProvide guidance to users to better support clinical guidelines and best clinical practices",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.51"
+      },
+      "name" : "Provide informative error messages and tool-tips",
+      "description" : "*Category*: System requirements – usability\nProvide informative error messages and tool-tips",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.12"
+      },
+      "name" : "Provide mechanism to securely change a user's password",
+      "description" : "*Category*: Security – authentication\nProvide mechanism to securely change a user's password",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.1"
+      },
+      "name" : "Provide password-protected access for authorized users",
+      "description" : "*Category*: Security – confidentiality\nProvide password-protected access for authorized users",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.65"
+      },
+      "name" : "Provide technical documentation of the IT solution (e.g. system architecture documentation, application programming interface (API) documentation)",
+      "description" : "*Category*: System requirements – usability\nProvide technical documentation of the IT solution (e.g. system architecture documentation, application programming interface (API) documentation)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.64"
+      },
+      "name" : "Provide user guidelines and training materials to effectively use the IT solution",
+      "description" : "*Category*: System requirements – usability\nProvide user guidelines and training materials to effectively use the IT solution",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.19"
+      },
+      "name" : "Record all authentication violations",
+      "description" : "*Category*: Security – audit trail and logs\nRecord all authentication violations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.36"
+      },
+      "name" : "Report version number when saving data to the database",
+      "description" : "*Category*: System requirements – general\nReport version number when saving data to the database",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.17"
+      },
+      "name" : "Require each user to authenticate by role before gaining access to the system",
+      "description" : "*Category*: Security – authentication\nRequire each user to authenticate by role before gaining access to the system",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.14"
+      },
+      "name" : "Reset user's password in a secure manner",
+      "description" : "*Category*: Security – authentication\nReset user's password in a secure manner",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.47"
+      },
+      "name" : "Scalable to accommodate new demands",
+      "description" : "*Category*: System requirements – scalability\nScalable to accommodate new demands",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.37"
+      },
+      "name" : "Show the number of records that are not yet synchronized",
+      "description" : "*Category*: System requirements – general\nShow the number of records that are not yet synchronized",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.54"
+      },
+      "name" : "Simplify data recording through predefined dropdown menu or searchable lists, radio buttons or checkboxes",
+      "description" : "*Category*: System requirements – usability\nSimplify data recording through predefined dropdown menu or searchable lists, radio buttons or checkboxes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.77"
+      },
+      "name" : "Solution should use international coding standards for data whenever possible\nCountries can develop their own local coding system, but WHO recommends use of ICD-10 coding system to classify congenital anomalies for international reporting and comparisons",
+      "description" : "*Category*: System requirements – interoperability\nSolution should use international coding standards for data whenever possible\nCountries can develop their own local coding system, but WHO recommends use of ICD-10 coding system to classify congenital anomalies for international reporting and comparisons",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.70"
+      },
+      "name" : "Store important system documents and information such as protocols, case inclusion criteria, surveillance population and similar important facets of the system, and make them available for retrieval as needed",
+      "description" : "*Category*: System requirements – configuration\nStore important system documents and information such as protocols, case inclusion criteria, surveillance population and similar important facets of the system, and make them available for retrieval as needed",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.28"
+      },
+      "name" : "Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing",
+      "description" : "*Category*: Security – user management\nSupport definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.55"
+      },
+      "name" : "Support multiple languages",
+      "description" : "*Category*: System requirements – usability\nSupport multiple languages",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.53"
+      },
+      "name" : "Support real-time data-entry validation and feedback to prevent data-entry errors from being recorded",
+      "description" : "*Category*: System requirements – usability\nSupport real-time data-entry validation and feedback to prevent data-entry errors from being recorded",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.36"
+      },
+      "name" : "The birth defects surveillance system to automatically make the reports I submit available in the system's data portal, if one exists",
+      "description" : "I want <a href=\"ActorDefinition-Surveillanceprogrammemanager.html\">Surveillance programme manager</a>, I want:\n>The birth defects surveillance system to automatically make the reports I submit available in the system's data portal, if one exists\n\nso that\n\n>I do not need to send the reports each time I generate them",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.35"
+      },
+      "name" : "The birth defects surveillance system to automatically send the reports I submit, by email, to a preconfigured distribution list ",
+      "description" : "I want <a href=\"ActorDefinition-Surveillanceprogrammemanager.html\">Surveillance programme manager</a>, I want:\n>The birth defects surveillance system to automatically send the reports I submit, by email, to a preconfigured distribution list \n\nso that\n\n>I do not need to send the reports each time I generate them",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.18"
+      },
+      "name" : "The birth defects surveillance system to notify the birth defects specialist that a case needs to be reviewed using an application notification, email, SMS or other method",
+      "description" : "I want <a href=\"ActorDefinition-Surveillancedatamanager.html\">Surveillance data manager</a>, I want:\n>The birth defects surveillance system to notify the birth defects specialist that a case needs to be reviewed using an application notification, email, SMS or other method\n\nso that\n\n>The birth defects specialist is informed in a timely manner about cases pending their review",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.23"
+      },
+      "name" : "The birth defects surveillance system to notify the surveillance data manager that the case has been updated with the missing information, using an application notification, email, SMS or other method",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>The birth defects surveillance system to notify the surveillance data manager that the case has been updated with the missing information, using an application notification, email, SMS or other method\n\nso that\n\n>The surveillance data manager is informed in a timely manner",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.31"
+      },
+      "name" : "The birth defects surveillance system to notify the surveillance programme manager when a report is marked as ready for their review, using an application notification, email, SMS or other method",
+      "description" : "I want <a href=\"ActorDefinition-Surveillancedatamanager.html\">Surveillance data manager</a>, I want:\n>The birth defects surveillance system to notify the surveillance programme manager when a report is marked as ready for their review, using an application notification, email, SMS or other method\n\nso that\n\n>The surveillance programme manager is informed in a timely manner about report(s) pending their review",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.4"
+      },
+      "name" : "The search to match on partial information (e.g. partial birth dates)",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>The search to match on partial information (e.g. partial birth dates)\n\nso that\n\n>I have a better chance of finding a match",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.78"
+      },
+      "name" : "The system should be able to integrate with other approved systems, such as electronic medical records and public health databases, to allow for seamless data sharing and analysis",
+      "description" : "*Category*: System requirements – interoperability\nThe system should be able to integrate with other approved systems, such as electronic medical records and public health databases, to allow for seamless data sharing and analysis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.5"
+      },
+      "name" : "The system to allow search parameters configuration (e.g. mandatory fields, when partial information is acceptable)",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>The system to allow search parameters configuration (e.g. mandatory fields, when partial information is acceptable)\n\nso that\n\n>A search can be optimized without compromising confidentiality",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.25"
+      },
+      "name" : "The system to automatically calculate indicators based on preset rules",
+      "description" : "I want <a href=\"ActorDefinition-Surveillancedatamanager.html\">Surveillance data manager</a>, I want:\n>The system to automatically calculate indicators based on preset rules\n\nso that\n\n>I do not have to calculate this myself",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.16"
+      },
+      "name" : "The system to delete images and videos automatically from the device, once uploaded into the birth defects surveillance system, if required by  local protocols",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>The system to delete images and videos automatically from the device, once uploaded into the birth defects surveillance system, if required by  local protocols\n\nso that\n\n>I can ensure private data do not remain on my device",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.3"
+      },
+      "name" : "The system to display sufficient data to identify the case",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>The system to display sufficient data to identify the case\n\nso that\n\n>I can check whether this is a new or existing case record and avoid duplicates",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.1"
+      },
+      "name" : "The system to require me (a user) to search to see whether the case record is already in the system before starting a new entry",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>The system to require me (a user) to search to see whether the case record is already in the system before starting a new entry\n\nso that\n\n>I can avoid duplicates",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.11"
+      },
+      "name" : "The system to retain history of updated information on the case record (e.g. observation notes)",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>The system to retain history of updated information on the case record (e.g. observation notes)\n\nso that\n\n>I can review past information updates",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.2"
+      },
+      "name" : "The system to return all potential matches based on search criteria",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>The system to return all potential matches based on search criteria\n\nso that\n\n>I can find the best match",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.14"
+      },
+      "name" : "The system to support me with visually identifying a birth defect by providing information about possible defects and syndromes (including photos, descriptions and ICD codes based on the WHO QRH) when I indicate on the screen an anatomical region of the newborn",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>The system to support me with visually identifying a birth defect by providing information about possible defects and syndromes (including photos, descriptions and ICD codes based on the WHO QRH) when I indicate on the screen an anatomical region of the newborn\n\nso that\n\n>I can better compare and identify the anomaly or syndrome",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.19"
+      },
+      "name" : "The system to support with the necessary information related to case inclusion criteria, if it is stored in the system\n",
+      "description" : "I want <a href=\"ActorDefinition-Surveillancedatamanager.html\">Surveillance data manager</a>, I want:\n>The system to support with the necessary information related to case inclusion criteria, if it is stored in the system\n\n\nso that\n\n>I can review birth defects against case inclusion criteria",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.34"
+      },
+      "name" : "To approve the generated report using a digital signature or other method appropriate for the local context",
+      "description" : "I want <a href=\"ActorDefinition-Surveillanceprogrammemanager.html\">Surveillance programme manager</a>, I want:\n>To approve the generated report using a digital signature or other method appropriate for the local context\n\nso that\n\n>I can certify the report as official",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.12"
+      },
+      "name" : "To be able to attach an identifier (e.g. QR code, barcode, fingerprint, photo) to the newborn's or mother's record based on national standards consent",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>To be able to attach an identifier (e.g. QR code, barcode, fingerprint, photo) to the newborn's or mother's record based on national standards consent\n\nso that\n\n>I have additional ways of identifying the newborn and/or mother",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.9"
+      },
+      "name" : "To be able to collect digital signatures from clients, if acceptable according to the local protocols",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>To be able to collect digital signatures from clients, if acceptable according to the local protocols\n\nso that\n\n>I can ensure client's informed consent for data collection is easy to get and register in the birth defects surveillance system",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.29"
+      },
+      "name" : "To be able to configure report parameters when generating reports such as time range, geography and other details",
+      "description" : "I want <a href=\"ActorDefinition-Surveillancedatamanager.html\">Surveillance data manager</a>, I want:\n>To be able to configure report parameters when generating reports such as time range, geography and other details\n\nso that\n\n>Appropriate reports can be generated",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.22"
+      },
+      "name" : "To be able to flag issues with a case and send that case to the data collector",
+      "description" : "I want <a href=\"ActorDefinition-Surveillancedatamanager.html\">Surveillance data manager</a>, I want:\n>To be able to flag issues with a case and send that case to the data collector\n\nso that\n\n>The data collector can review, follow up and correct the case record when further information is available",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.21"
+      },
+      "name" : "To be able to flag issues with a case and send that case to the surveillance data manager for review and follow up",
+      "description" : "I want <a href=\"ActorDefinition-Birthdefectspecialist.html\">Birth defect specialist</a>, I want:\n>To be able to flag issues with a case and send that case to the surveillance data manager for review and follow up\n\nso that\n\n>The surveillance data manager can add more information to  the case record and send it to the data collector",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.8"
+      },
+      "name" : "to be able to retrieve client information (e.g. newborn, mother, father) from existing electronic medical records and link it to the case record",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>to be able to retrieve client information (e.g. newborn, mother, father) from existing electronic medical records and link it to the case record\n\nso that\n\n>I can reuse existing data and avoid collecting the same data multiple times from the client",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.20"
+      },
+      "name" : "To be able to send the final determination regarding the diagnosis back to the care provider using an application notification, email, SMS or other method, if required by the local protocol",
+      "description" : "I want <a href=\"ActorDefinition-Surveillancedatamanager.html\">Surveillance data manager</a>, I want:\n>To be able to send the final determination regarding the diagnosis back to the care provider using an application notification, email, SMS or other method, if required by the local protocol\n\nso that\n\n>The care provider has a final verified diagnosis to provide better care to newborn",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.10"
+      },
+      "name" : "To be able to update demographic information of newborn/mother/informant",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>To be able to update demographic information of newborn/mother/informant\n\nso that\n\n>The most current information can be recorded",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.13"
+      },
+      "name" : "To bypass the standard flow as needed and jump between sections, except when local protocols demand consent to proceed",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>To bypass the standard flow as needed and jump between sections, except when local protocols demand consent to proceed\n\nso that\n\n>The data can be entered in a nonlinear fashion as needed",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.7"
+      },
+      "name" : "To create a new case record with a unique ID and timestamp of record creation",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>To create a new case record with a unique ID and timestamp of record creation\n\nso that\n\n>I can begin entering birth defects case information",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.24"
+      },
+      "name" : "To have the ability to aggregate the data by time period and surveillance population",
+      "description" : "I want <a href=\"ActorDefinition-Surveillancedatamanager.html\">Surveillance data manager</a>, I want:\n>To have the ability to aggregate the data by time period and surveillance population\n\nso that\n\n>I can check the data for quality issues",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.28"
+      },
+      "name" : "To have the ability to deidentify the data and prepare the database for analysis and reporting",
+      "description" : "I want <a href=\"ActorDefinition-Surveillancedatamanager.html\">Surveillance data manager</a>, I want:\n>To have the ability to deidentify the data and prepare the database for analysis and reporting\n\nso that\n\n>Sensitive personal information is not included in birth defects surveillance reports or any results from the analysis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.27"
+      },
+      "name" : "To have the ability to make changes to the data (case records)",
+      "description" : "I want <a href=\"ActorDefinition-Surveillancedatamanager.html\">Surveillance data manager</a>, I want:\n>To have the ability to make changes to the data (case records)\n\nso that\n\n>I can correct issues that I have detected",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.26"
+      },
+      "name" : "To have the ability to query the data to look for issues of data quality",
+      "description" : "I want <a href=\"ActorDefinition-Surveillancedatamanager.html\">Surveillance data manager</a>, I want:\n>To have the ability to query the data to look for issues of data quality\n\nso that\n\n>I can detect problems with the data",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.33"
+      },
+      "name" : "To have the ability to see a summary of all birth defects cases captured in the health facilities participating in the surveillance system",
+      "description" : "I want <a href=\"ActorDefinition-Surveillanceprogrammemanager.html\">Surveillance programme manager</a>, I want:\n>To have the ability to see a summary of all birth defects cases captured in the health facilities participating in the surveillance system\n\nso that\n\n>I can make better decisions related to birth defect prevention for a given administrative area/region/country",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.15"
+      },
+      "name" : "To have the ability to upload images and videos of the birth defect in the birth defects surveillance application or system",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>To have the ability to upload images and videos of the birth defect in the birth defects surveillance application or system\n\nso that\n\n>I can share them with specialists and validate if a case shall be recorded",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.32"
+      },
+      "name" : "To have the possibility to download the data to my own programme data centre",
+      "description" : "I want <a href=\"ActorDefinition-Surveillanceprogrammemanager.html\">Surveillance programme manager</a>, I want:\n>To have the possibility to download the data to my own programme data centre\n\nso that\n\n>I have a local copy of the data for anlysis and merge with other years/cohorts of data",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.17"
+      },
+      "name" : "To have the possibility to see or visualize medical data and previous measurements (log history) ",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>To have the possibility to see or visualize medical data and previous measurements (log history) \n\nso that\n\n>I can better monitor the case",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.30"
+      },
+      "name" : "To produce reports based on stored templates",
+      "description" : "I want <a href=\"ActorDefinition-Surveillancedatamanager.html\">Surveillance data manager</a>, I want:\n>To produce reports based on stored templates\n\nso that\n\n>I\u00a0do not need to create the reports manually for reporting purposes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.6"
+      },
+      "name" : "To search with wildcards (using a symbol to replace one or more characters)",
+      "description" : "I want <a href=\"ActorDefinition-Datacollector.html\">Data collector</a>, I want:\n>To search with wildcards (using a symbol to replace one or more characters)\n\nso that\n\n>I can find something without knowing the exact spelling",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.FXNREQ.37"
+      },
+      "name" : "To view a range of standardized visualizations\u00a0(e.g. charts, tables, maps)",
+      "description" : "I want <a href=\"ActorDefinition-Surveillanceprogrammemanager.html\">Surveillance programme manager</a>, I want:\n>To view a range of standardized visualizations\u00a0(e.g. charts, tables, maps)\n\nso that\n\n>I\u00a0am able to\u00a0use data, collected in the health facilities participating in the surveillance system, for service delivery and informing programmatic actions with the aim of improving the quality of care for clients",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.56"
+      },
+      "name" : "Use industry standard user interface practices and apply them consistently throughout the system",
+      "description" : "*Category*: System requirements – usability\nUse industry standard user interface practices and apply them consistently throughout the system",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.45"
+      },
+      "name" : "Warn user if no valid backup for more than a predefined number of days",
+      "description" : "*Category*: System requirements – reliability\nWarn user if no valid backup for more than a predefined number of days",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Requirements"
+      }],
+      "reference" : {
+        "reference" : "Requirements/BDS.NFXNREQ.42"
+      },
+      "name" : "Work in environments subject to loss of connectivity",
+      "description" : "*Category*: System requirements – reliability\nWork in environments subject to loss of connectivity",
+      "exampleBoolean" : false
+    }],
+    "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "changes.html"
+          }],
+          "nameUrl" : "changes.html",
+          "title" : "Changes",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "dependencies.html"
+          }],
+          "nameUrl" : "dependencies.html",
+          "title" : "Dependencies",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "references.html"
+          }],
+          "nameUrl" : "references.html",
+          "title" : "References",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "adapting.html"
+          }],
+          "nameUrl" : "adapting.html",
+          "title" : "Adapting Guidelines for Country use",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "license.html"
+          }],
+          "nameUrl" : "license.html",
+          "title" : "License",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "business-requirements.html"
+        }],
+        "nameUrl" : "business-requirements.html",
+        "title" : "Business Requirements",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "concepts.html"
+          }],
+          "nameUrl" : "concepts.html",
+          "title" : "Concepts",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "personas.html"
+          }],
+          "nameUrl" : "personas.html",
+          "title" : "Generic Personas",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "scenarios.html"
+          }],
+          "nameUrl" : "scenarios.html",
+          "title" : "User Scenarios",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "business-processes.html"
+          }],
+          "nameUrl" : "business-processes.html",
+          "title" : "Business Processes",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "dictionary.html"
+          }],
+          "nameUrl" : "dictionary.html",
+          "title" : "Data Dictionary",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "decision-logic.html"
+          }],
+          "nameUrl" : "decision-logic.html",
+          "title" : "Decision-support logic",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "scheduling-logic.html"
+          }],
+          "nameUrl" : "scheduling-logic.html",
+          "title" : "Scheduling logic",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "indicators.html"
+          }],
+          "nameUrl" : "indicators.html",
+          "title" : "Indicator and Performance Metrics",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "system-requirements.html"
+          }],
+          "nameUrl" : "system-requirements.html",
+          "title" : "System Requirements",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "functional-requirements.html"
+          }],
+          "nameUrl" : "functional-requirements.html",
+          "title" : "Functional Requirements",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "non-functional-requirements.html"
+          }],
+          "nameUrl" : "non-functional-requirements.html",
+          "title" : "Non-functional Requirements",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "data-models-and-exchange.html"
+        }],
+        "nameUrl" : "data-models-and-exchange.html",
+        "title" : "Data Models and Exchange",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "system-actors.html"
+          }],
+          "nameUrl" : "system-actors.html",
+          "title" : "System Actors",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "sequence-diagrams.html"
+          }],
+          "nameUrl" : "sequence-diagrams.html",
+          "title" : "Sequence Diagrams",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "transactions.html"
+          }],
+          "nameUrl" : "transactions.html",
+          "title" : "Transactions",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "indicators-measures.html"
+          }],
+          "nameUrl" : "indicators-measures.html",
+          "title" : "Indicators and Measures",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "codings.html"
+          }],
+          "nameUrl" : "codings.html",
+          "title" : "Codings",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "deployment.html"
+        }],
+        "nameUrl" : "deployment.html",
+        "title" : "Deployment",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "security-privacy.html"
+          }],
+          "nameUrl" : "security-privacy.html",
+          "title" : "Security and Privacy Considerations",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "testing.html"
+          }],
+          "nameUrl" : "testing.html",
+          "title" : "Testing",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-data.html"
+          }],
+          "nameUrl" : "test-data.html",
+          "title" : "Test Data",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "reference-implementations.html"
+          }],
+          "nameUrl" : "reference-implementations.html",
+          "title" : "Reference Implementations",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "trust_domain.html"
+          }],
+          "nameUrl" : "trust_domain.html",
+          "title" : "Trust Domains",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "downloads.html"
+          }],
+          "nameUrl" : "downloads.html",
+          "title" : "Downloads",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "indices.html"
+        }],
+        "nameUrl" : "indices.html",
+        "title" : "Indices",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "artifacts.html"
+          }],
+          "nameUrl" : "artifacts.html",
+          "title" : "Artifact Index",
+          "generation" : "html"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "maps.html"
+          }],
+          "nameUrl" : "maps.html",
+          "title" : "Mappings",
+          "generation" : "markdown"
+        }]
+      }]
+    },
+    "parameter" : [{
+      "code" : "path-pages",
+      "value" : "input/dictionary"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/decision-logic"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/business-processes"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/scheduling-logic"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/indicators"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/system-requirements"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/examples"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/extensions"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/models"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/operations"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/profiles"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/maps"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "template/config"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/images"
+    },
+    {
+      "code" : "path-tx-cache",
+      "value" : "input-cache/txcache"
+    }]
+  }
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="BDS.FXNREQ.18"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGRequirements"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Requirements BDS.FXNREQ.18</b></p><a name="BDS.FXNREQ.18"> </a><a name="hcBDS.FXNREQ.18"> </a><a name="BDS.FXNREQ.18-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/WorldHealthOrganization/smart-base/StructureDefinition-SGRequirements.html">SGRequirements</a></p></div><table class="grid"/></div>
+  </text>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGUserStory">
+    <extension url="http://smart.who.int/base/StructureDefinition/SGString">
+      <valueString value="The birth defects surveillance system to notify the birth defects specialist that a case needs to be reviewed using an application notification, email, SMS or other method"/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/SGString">
+      <valueString value="The birth defects specialist is informed in a timely manner about cases pending their review"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url">
+    <valueUri value="http://smart.who.int/dak-bds/Requirements/BDS.FXNREQ.18"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version">
+    <valueString value="1.0.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name">
+    <valueString value="The birth defects surveillance system to notify the birth defects specialist that a case needs to be reviewed using an application notification, email, SMS or other method"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title">
+    <valueString value="The birth defects surveillance system to notify the birth defects specialist that a case needs to be reviewed using an application notification, email, SMS or other method"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status">
+    <valueCode value="active"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.experimental">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date">
+    <valueDateTime value="2025-06-12T09:28:09+00:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher">
+    <valueString value="WHO"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact">
+    <valueContactDetail>
+      <name value="WHO"/>
+      <telecom>
+        <system value="url"/>
+        <value value="http://who.int"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description">
+    <valueMarkdown value="I want &lt;a href=&quot;ActorDefinition-Surveillancedatamanager.html&quot;&gt;Surveillance data manager&lt;/a&gt;, I want:&#xA;&gt;The birth defects surveillance system to notify the birth defects specialist that a case needs to be reviewed using an application notification, email, SMS or other method&#xA;&#xA;so that&#xA;&#xA;&gt;The birth defects specialist is informed in a timely manner about cases pending their review"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction"/>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Requirements"/>
+    </coding>
+  </code>
+</Basic>

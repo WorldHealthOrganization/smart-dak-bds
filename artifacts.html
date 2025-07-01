@@ -1,0 +1,2341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifact Index - SMART DAK BDS v1.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.1"}
+    h3,h4,h5,h6{--heading-prefix:"5.1.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Summary</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
+        <a href="adapting.html">Adapting Guidelines for Country use</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Requirements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="personas.html">Generic Personas</a>
+      </li>
+      <li>
+        <a href="scenarios.html">User Scenarios</a>
+      </li>
+      <li>
+        <a href="business-processes.html">Business Processes</a>
+      </li>
+      <li>
+        <a href="dictionary.html">Data Dictionary</a>
+      </li>
+      <li>
+        <a href="scheduling-logic.html">Scheduling Logic</a>
+      </li>
+      <li>
+        <a href="decision-logic.html">Decision-support Logic</a>
+      </li>
+      <li>
+        <a href="indicators.html">Indicator and Performance Metrics</a>
+      </li>
+      <li>
+        <a href="system-requirements.html">System Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Data Models and Exchange
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="system-actors.html">System Actors</a>
+      </li>
+      <li>
+        <a href="sequence-diagrams.html">Sequence Diagrams</a>
+      </li>
+      <li>
+        <a href="transactions.html">Transactions</a>
+      </li>
+      <li>
+        <a href="indicators-measures.html">Indicators and Measures</a>
+      </li>
+      <li>
+        <a href="codings.html">Codings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="security-privacy.html">Security and Privacy Considerations</a>
+      </li>
+      <li>
+        <a href="testing.html">Testing</a>
+      </li>
+      <li>
+        <a href="test-data.html">Test Data</a>
+      </li>
+      <li>
+        <a href="reference-implementations.html">Reference Implementations</a>
+      </li>
+      <li>
+        <a href="trust_domain.html">Trust Domains</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">SMART DAK BDS</span>
+            <br/>
+            <span style="display:inline-block;">1.0.1 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='indices.html'><b>Indices</b></a></li><li><b>Artifact Index</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SMART DAK BDS, published by WHO. This guide is not an authorized publication; it is the continuous build for version 1.0.1  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/WorldHealthOrganization/smart-dak-bds/tree/main'>https://github.com/WorldHealthOrganization/smart-dak-bds/tree/main</a> and changes regularly. See the <a href='http://smart.who.int/dak-bds/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifact Index</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Requirements: Formal Requirements</a>
+      </li>
+      <li>
+         <a href="#2">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#4">Other</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Requirements: Formal Requirements </h3>
+    <p>The following artifacts describe the specific requirements to be met by systems compliant with the implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.79.html"
+                  title="Requirements/BDS.NFXNREQ.79">A birth defects surveillance mobile application should be able to function as a standalone (for training purposes, small-scale surveillance or other uses) and/or contribute data to a centralized database, depending on local protocols</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+A birth defects surveillance mobile application should be able to function as a standalone (for training purposes, small-scale surveillance or other uses) and/or contribute data to a centralized database, depending on local protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.63.html"
+                  title="Requirements/BDS.NFXNREQ.63">Accept data from multiple input methods, including paper and geocoding (GPS)</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Accept data from multiple input methods, including paper and geocoding (GPS)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.9.html"
+                  title="Requirements/BDS.NFXNREQ.9">Access to data, data transfer and data storage are secured (encrypted)</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+Access to data, data transfer and data storage are secured (encrypted)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.11.html"
+                  title="Requirements/BDS.NFXNREQ.11">Adhere to complex password requirements</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Adhere to complex password requirements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.60.html"
+                  title="Requirements/BDS.NFXNREQ.60">Adjust display to fit small screens (e.g. on mobile phones)</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Adjust display to fit small screens (e.g. on mobile phones)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.52.html"
+                  title="Requirements/BDS.NFXNREQ.52">Alert user when navigating away from a form without saving</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Alert user when navigating away from a form without saving</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.61.html"
+                  title="Requirements/BDS.NFXNREQ.61">Allow adaptability to multiple operating systems (e.g. Windows, Linux, IOS, Android)</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Allow adaptability to multiple operating systems (e.g. Windows, Linux, IOS, Android)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.32.html"
+                  title="Requirements/BDS.NFXNREQ.32">Allow admin user to request password reset</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Allow admin user to request password reset</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.30.html"
+                  title="Requirements/BDS.NFXNREQ.30">Allow cascading user management and assignment of roles</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Allow cascading user management and assignment of roles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.75.html"
+                  title="Requirements/BDS.NFXNREQ.75">Allow for data exchange and efficient synchronization across multiple facilities and points of service when Internet is available, even when it is intermittent and slow</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – interoperability
+Allow for data exchange and efficient synchronization across multiple facilities and points of service when Internet is available, even when it is intermittent and slow</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.29.html"
+                  title="Requirements/BDS.NFXNREQ.29">Allow roles to be associated with specific geographical areas and/or health-care facilities</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Allow roles to be associated with specific geographical areas and/or health-care facilities</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.31.html"
+                  title="Requirements/BDS.NFXNREQ.31">Allow user to change their own password</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Allow user to change their own password</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.27.html"
+                  title="Requirements/BDS.NFXNREQ.27">Allow user with permission to create a new user and temporary password</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Allow user with permission to create a new user and temporary password</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.5.html"
+                  title="Requirements/BDS.NFXNREQ.5">Anonymize data exported from the system</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+Anonymize data exported from the system</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.76.html"
+                  title="Requirements/BDS.NFXNREQ.76">Architecture of the solution is consistent with architecture of HIS</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – interoperability
+Architecture of the solution is consistent with architecture of HIS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.7.html"
+                  title="Requirements/BDS.NFXNREQ.7">Automatically log out the user after specified time of inactivity</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+Automatically log out the user after specified time of inactivity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.49.html"
+                  title="Requirements/BDS.NFXNREQ.49">Be able to accommodate at least [x number of]a concurrent users</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – scalability
+Be able to accommodate at least [x number of]a concurrent users</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.48.html"
+                  title="Requirements/BDS.NFXNREQ.48">Be able to accommodate at least [x number of]a health-care facilities</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – scalability
+Be able to accommodate at least [x number of]a health-care facilities</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.46.html"
+                  title="Requirements/BDS.NFXNREQ.46">Be able to revert to the latest functional version of the solution without losing data (server backup/restore, disaster recovery plan)</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – reliability
+Be able to revert to the latest functional version of the solution without losing data (server backup/restore, disaster recovery plan)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.59.html"
+                  title="Requirements/BDS.NFXNREQ.59">Be reliable and robust (minimize the number of system crashes)</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Be reliable and robust (minimize the number of system crashes)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.50.html"
+                  title="Requirements/BDS.NFXNREQ.50">Be user-friendly for people with low computer literacy</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Be user-friendly for people with low computer literacy</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.72.html"
+                  title="Requirements/BDS.NFXNREQ.72">Communicate with external systems through mediators</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – interoperability
+Communicate with external systems through mediators</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.62.html"
+                  title="Requirements/BDS.NFXNREQ.62">Compatible with range of mobile devices, including smartphones and tablets</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Compatible with range of mobile devices, including smartphones and tablets</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.67.html"
+                  title="Requirements/BDS.NFXNREQ.67">Configure business rules in line with guidelines and standard operating procedures</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – configuration
+Configure business rules in line with guidelines and standard operating procedures</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.68.html"
+                  title="Requirements/BDS.NFXNREQ.68">Configure error messages</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – configuration
+Configure error messages</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.66.html"
+                  title="Requirements/BDS.NFXNREQ.66">Configure system centrally</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – configuration
+Configure system centrally</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.69.html"
+                  title="Requirements/BDS.NFXNREQ.69">Configure workflows and business rules to accommodate differences between facilities</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – configuration
+Configure workflows and business rules to accommodate differences between facilities</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.57.html"
+                  title="Requirements/BDS.NFXNREQ.57">Easy to learn and intuitive to enable user to navigate between pages</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Easy to learn and intuitive to enable user to navigate between pages</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.43.html"
+                  title="Requirements/BDS.NFXNREQ.43">Enable earlier versions of records to be recoverable</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – reliability
+Enable earlier versions of records to be recoverable</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.41.html"
+                  title="Requirements/BDS.NFXNREQ.41">Enable system deployment in environments subject to power loss</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – reliability
+Enable system deployment in environments subject to power loss</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.35.html"
+                  title="Requirements/BDS.NFXNREQ.35">Generate IDs that are unique across different installations or sites</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Generate IDs that are unique across different installations or sites</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.24.html"
+                  title="Requirements/BDS.NFXNREQ.24">Generate analysis of the usage of different system features and reports</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Generate analysis of the usage of different system features and reports</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.44.html"
+                  title="Requirements/BDS.NFXNREQ.44">Have ability to easily back up information</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – reliability
+Have ability to easily back up information</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.80.html"
+                  title="Requirements/BDS.NFXNREQ.80">If possible, the system should be embedded into the maternal/neonatal information system as an additional module</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+If possible, the system should be embedded into the maternal/neonatal information system as an additional module</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.74.html"
+                  title="Requirements/BDS.NFXNREQ.74">Link with insurance systems to verify eligibility and submit claims</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – interoperability
+Link with insurance systems to verify eligibility and submit claims</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.15.html"
+                  title="Requirements/BDS.NFXNREQ.15">Lock out user after a specified number of wrong password attempts</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Lock out user after a specified number of wrong password attempts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.22.html"
+                  title="Requirements/BDS.NFXNREQ.22">Log access to data summaries, reports, analysis and visualization features</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Log access to data summaries, reports, analysis and visualization features</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.21.html"
+                  title="Requirements/BDS.NFXNREQ.21">Log access to views of individual client records</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Log access to views of individual client records</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.20.html"
+                  title="Requirements/BDS.NFXNREQ.20">Log all activities performed by the user, including date- and timestamp</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Log all activities performed by the user, including date- and timestamp</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.25.html"
+                  title="Requirements/BDS.NFXNREQ.25">Log all data and system errors</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Log all data and system errors</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.23.html"
+                  title="Requirements/BDS.NFXNREQ.23">Log exchange of data with other systems</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Log exchange of data with other systems</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.18.html"
+                  title="Requirements/BDS.NFXNREQ.18">Log system logins and logouts</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Log system logins and logouts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.40.html"
+                  title="Requirements/BDS.NFXNREQ.40">Must have ability to store images and other unstructured data</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Must have ability to store images and other unstructured data</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.3.html"
+                  title="Requirements/BDS.NFXNREQ.3">No personally identifiable information could be shared from the local device in the country to a cloud server or other servers out of the country</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+No personally identifiable information could be shared from the local device in the country to a cloud server or other servers out of the country</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.16.html"
+                  title="Requirements/BDS.NFXNREQ.16">Notify user if their account is locked due to wrong password attempts</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Notify user if their account is locked due to wrong password attempts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.13.html"
+                  title="Requirements/BDS.NFXNREQ.13">Notify user of password change to their account</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Notify user of password change to their account</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.10.html"
+                  title="Requirements/BDS.NFXNREQ.10">Notify user to change password the first time they log in</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Notify user to change password the first time they log in</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.33.html"
+                  title="Requirements/BDS.NFXNREQ.33">Notify user to regularly change their password</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Notify user to regularly change their password</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.26.html"
+                  title="Requirements/BDS.NFXNREQ.26">Permit independent security audits to check security compliance on a regular basis, if required by protocol</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Permit independent security audits to check security compliance on a regular basis, if required by protocol</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.6.html"
+                  title="Requirements/BDS.NFXNREQ.6">Prevent remembering username and password</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+Prevent remembering username and password</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.2.html"
+                  title="Requirements/BDS.NFXNREQ.2">Provide a means to ensure confidentiality and privacy of personal health information</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+Provide a means to ensure confidentiality and privacy of personal health information</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.34.html"
+                  title="Requirements/BDS.NFXNREQ.34">Provide a unique version number for each revision</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Provide a unique version number for each revision</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.4.html"
+                  title="Requirements/BDS.NFXNREQ.4">Provide ability for allowed users to view confidential data</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+Provide ability for allowed users to view confidential data</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.71.html"
+                  title="Requirements/BDS.NFXNREQ.71">Provide ability to create, read, update and delete report templates to use for automated reporting</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – configuration
+Provide ability to create, read, update and delete report templates to use for automated reporting</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.73.html"
+                  title="Requirements/BDS.NFXNREQ.73">Provide access to data through APIs</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – interoperability
+Provide access to data through APIs</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.38.html"
+                  title="Requirements/BDS.NFXNREQ.38">Provide capacity of the solution to be linked to data visualizer tool (e.g. Pw Bi, DHIS2)</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Provide capacity of the solution to be linked to data visualizer tool (e.g. Pw Bi, DHIS2)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.39.html"
+                  title="Requirements/BDS.NFXNREQ.39">Provide capacity of the solution to extensive reporting and analytic capabilities (e.g. export CSV files/usage metrics/built-in reporting and analytics)</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Provide capacity of the solution to extensive reporting and analytic capabilities (e.g. export CSV files/usage metrics/built-in reporting and analytics)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.8.html"
+                  title="Requirements/BDS.NFXNREQ.8">Provide encrypted communication between components</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+Provide encrypted communication between components</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.58.html"
+                  title="Requirements/BDS.NFXNREQ.58">Provide guidance to users to better support clinical guidelines and best clinical practices</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Provide guidance to users to better support clinical guidelines and best clinical practices</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.51.html"
+                  title="Requirements/BDS.NFXNREQ.51">Provide informative error messages and tool-tips</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Provide informative error messages and tool-tips</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.12.html"
+                  title="Requirements/BDS.NFXNREQ.12">Provide mechanism to securely change a user's password</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Provide mechanism to securely change a user's password</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.1.html"
+                  title="Requirements/BDS.NFXNREQ.1">Provide password-protected access for authorized users</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+Provide password-protected access for authorized users</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.65.html"
+                  title="Requirements/BDS.NFXNREQ.65">Provide technical documentation of the IT solution (e.g. system architecture documentation, application programming interface (API) documentation)</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Provide technical documentation of the IT solution (e.g. system architecture documentation, application programming interface (API) documentation)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.64.html"
+                  title="Requirements/BDS.NFXNREQ.64">Provide user guidelines and training materials to effectively use the IT solution</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Provide user guidelines and training materials to effectively use the IT solution</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.19.html"
+                  title="Requirements/BDS.NFXNREQ.19">Record all authentication violations</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Record all authentication violations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.36.html"
+                  title="Requirements/BDS.NFXNREQ.36">Report version number when saving data to the database</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Report version number when saving data to the database</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.17.html"
+                  title="Requirements/BDS.NFXNREQ.17">Require each user to authenticate by role before gaining access to the system</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Require each user to authenticate by role before gaining access to the system</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.14.html"
+                  title="Requirements/BDS.NFXNREQ.14">Reset user's password in a secure manner</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Reset user's password in a secure manner</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.47.html"
+                  title="Requirements/BDS.NFXNREQ.47">Scalable to accommodate new demands</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – scalability
+Scalable to accommodate new demands</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.37.html"
+                  title="Requirements/BDS.NFXNREQ.37">Show the number of records that are not yet synchronized</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Show the number of records that are not yet synchronized</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.54.html"
+                  title="Requirements/BDS.NFXNREQ.54">Simplify data recording through predefined dropdown menu or searchable lists, radio buttons or checkboxes</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Simplify data recording through predefined dropdown menu or searchable lists, radio buttons or checkboxes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.77.html"
+                  title="Requirements/BDS.NFXNREQ.77">Solution should use international coding standards for data whenever possible
+Countries can develop their own local coding system, but WHO recommends use of ICD-10 coding system to classify congenital anomalies for international reporting and comparisons</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – interoperability
+Solution should use international coding standards for data whenever possible
+Countries can develop their own local coding system, but WHO recommends use of ICD-10 coding system to classify congenital anomalies for international reporting and comparisons</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.70.html"
+                  title="Requirements/BDS.NFXNREQ.70">Store important system documents and information such as protocols, case inclusion criteria, surveillance population and similar important facets of the system, and make them available for retrieval as needed</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – configuration
+Store important system documents and information such as protocols, case inclusion criteria, surveillance population and similar important facets of the system, and make them available for retrieval as needed</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.28.html"
+                  title="Requirements/BDS.NFXNREQ.28">Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.55.html"
+                  title="Requirements/BDS.NFXNREQ.55">Support multiple languages</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Support multiple languages</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.53.html"
+                  title="Requirements/BDS.NFXNREQ.53">Support real-time data-entry validation and feedback to prevent data-entry errors from being recorded</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Support real-time data-entry validation and feedback to prevent data-entry errors from being recorded</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.36.html"
+                  title="Requirements/BDS.FXNREQ.36">The birth defects surveillance system to automatically make the reports I submit available in the system's data portal, if one exists</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillanceprogrammemanager.html"&gt;Surveillance programme manager&lt;/a&gt;, I want:
+&gt;The birth defects surveillance system to automatically make the reports I submit available in the system's data portal, if one exists</p>
+
+<p>so that</p>
+
+<p>&gt;I do not need to send the reports each time I generate them</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.35.html"
+                  title="Requirements/BDS.FXNREQ.35">The birth defects surveillance system to automatically send the reports I submit, by email, to a preconfigured distribution list </a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillanceprogrammemanager.html"&gt;Surveillance programme manager&lt;/a&gt;, I want:
+&gt;The birth defects surveillance system to automatically send the reports I submit, by email, to a preconfigured distribution list</p>
+
+<p>so that</p>
+
+<p>&gt;I do not need to send the reports each time I generate them</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.18.html"
+                  title="Requirements/BDS.FXNREQ.18">The birth defects surveillance system to notify the birth defects specialist that a case needs to be reviewed using an application notification, email, SMS or other method</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillancedatamanager.html"&gt;Surveillance data manager&lt;/a&gt;, I want:
+&gt;The birth defects surveillance system to notify the birth defects specialist that a case needs to be reviewed using an application notification, email, SMS or other method</p>
+
+<p>so that</p>
+
+<p>&gt;The birth defects specialist is informed in a timely manner about cases pending their review</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.23.html"
+                  title="Requirements/BDS.FXNREQ.23">The birth defects surveillance system to notify the surveillance data manager that the case has been updated with the missing information, using an application notification, email, SMS or other method</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;The birth defects surveillance system to notify the surveillance data manager that the case has been updated with the missing information, using an application notification, email, SMS or other method</p>
+
+<p>so that</p>
+
+<p>&gt;The surveillance data manager is informed in a timely manner</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.31.html"
+                  title="Requirements/BDS.FXNREQ.31">The birth defects surveillance system to notify the surveillance programme manager when a report is marked as ready for their review, using an application notification, email, SMS or other method</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillancedatamanager.html"&gt;Surveillance data manager&lt;/a&gt;, I want:
+&gt;The birth defects surveillance system to notify the surveillance programme manager when a report is marked as ready for their review, using an application notification, email, SMS or other method</p>
+
+<p>so that</p>
+
+<p>&gt;The surveillance programme manager is informed in a timely manner about report(s) pending their review</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.4.html" title="Requirements/BDS.FXNREQ.4">The search to match on partial information (e.g. partial birth dates)</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;The search to match on partial information (e.g. partial birth dates)</p>
+
+<p>so that</p>
+
+<p>&gt;I have a better chance of finding a match</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.78.html"
+                  title="Requirements/BDS.NFXNREQ.78">The system should be able to integrate with other approved systems, such as electronic medical records and public health databases, to allow for seamless data sharing and analysis</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – interoperability
+The system should be able to integrate with other approved systems, such as electronic medical records and public health databases, to allow for seamless data sharing and analysis</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.5.html" title="Requirements/BDS.FXNREQ.5">The system to allow search parameters configuration (e.g. mandatory fields, when partial information is acceptable)</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;The system to allow search parameters configuration (e.g. mandatory fields, when partial information is acceptable)</p>
+
+<p>so that</p>
+
+<p>&gt;A search can be optimized without compromising confidentiality</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.25.html"
+                  title="Requirements/BDS.FXNREQ.25">The system to automatically calculate indicators based on preset rules</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillancedatamanager.html"&gt;Surveillance data manager&lt;/a&gt;, I want:
+&gt;The system to automatically calculate indicators based on preset rules</p>
+
+<p>so that</p>
+
+<p>&gt;I do not have to calculate this myself</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.16.html"
+                  title="Requirements/BDS.FXNREQ.16">The system to delete images and videos automatically from the device, once uploaded into the birth defects surveillance system, if required by  local protocols</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;The system to delete images and videos automatically from the device, once uploaded into the birth defects surveillance system, if required by  local protocols</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure private data do not remain on my device</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.3.html" title="Requirements/BDS.FXNREQ.3">The system to display sufficient data to identify the case</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;The system to display sufficient data to identify the case</p>
+
+<p>so that</p>
+
+<p>&gt;I can check whether this is a new or existing case record and avoid duplicates</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.1.html" title="Requirements/BDS.FXNREQ.1">The system to require me (a user) to search to see whether the case record is already in the system before starting a new entry</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;The system to require me (a user) to search to see whether the case record is already in the system before starting a new entry</p>
+
+<p>so that</p>
+
+<p>&gt;I can avoid duplicates</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.11.html"
+                  title="Requirements/BDS.FXNREQ.11">The system to retain history of updated information on the case record (e.g. observation notes)</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;The system to retain history of updated information on the case record (e.g. observation notes)</p>
+
+<p>so that</p>
+
+<p>&gt;I can review past information updates</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.2.html" title="Requirements/BDS.FXNREQ.2">The system to return all potential matches based on search criteria</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;The system to return all potential matches based on search criteria</p>
+
+<p>so that</p>
+
+<p>&gt;I can find the best match</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.14.html"
+                  title="Requirements/BDS.FXNREQ.14">The system to support me with visually identifying a birth defect by providing information about possible defects and syndromes (including photos, descriptions and ICD codes based on the WHO QRH) when I indicate on the screen an anatomical region of the newborn</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;The system to support me with visually identifying a birth defect by providing information about possible defects and syndromes (including photos, descriptions and ICD codes based on the WHO QRH) when I indicate on the screen an anatomical region of the newborn</p>
+
+<p>so that</p>
+
+<p>&gt;I can better compare and identify the anomaly or syndrome</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.19.html"
+                  title="Requirements/BDS.FXNREQ.19">The system to support with the necessary information related to case inclusion criteria, if it is stored in the system
+</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillancedatamanager.html"&gt;Surveillance data manager&lt;/a&gt;, I want:
+&gt;The system to support with the necessary information related to case inclusion criteria, if it is stored in the system</p>
+
+<p>so that</p>
+
+<p>&gt;I can review birth defects against case inclusion criteria</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.34.html"
+                  title="Requirements/BDS.FXNREQ.34">To approve the generated report using a digital signature or other method appropriate for the local context</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillanceprogrammemanager.html"&gt;Surveillance programme manager&lt;/a&gt;, I want:
+&gt;To approve the generated report using a digital signature or other method appropriate for the local context</p>
+
+<p>so that</p>
+
+<p>&gt;I can certify the report as official</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.12.html"
+                  title="Requirements/BDS.FXNREQ.12">To be able to attach an identifier (e.g. QR code, barcode, fingerprint, photo) to the newborn's or mother's record based on national standards consent</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;To be able to attach an identifier (e.g. QR code, barcode, fingerprint, photo) to the newborn's or mother's record based on national standards consent</p>
+
+<p>so that</p>
+
+<p>&gt;I have additional ways of identifying the newborn and/or mother</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.9.html" title="Requirements/BDS.FXNREQ.9">To be able to collect digital signatures from clients, if acceptable according to the local protocols</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;To be able to collect digital signatures from clients, if acceptable according to the local protocols</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure client's informed consent for data collection is easy to get and register in the birth defects surveillance system</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.29.html"
+                  title="Requirements/BDS.FXNREQ.29">To be able to configure report parameters when generating reports such as time range, geography and other details</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillancedatamanager.html"&gt;Surveillance data manager&lt;/a&gt;, I want:
+&gt;To be able to configure report parameters when generating reports such as time range, geography and other details</p>
+
+<p>so that</p>
+
+<p>&gt;Appropriate reports can be generated</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.22.html"
+                  title="Requirements/BDS.FXNREQ.22">To be able to flag issues with a case and send that case to the data collector</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillancedatamanager.html"&gt;Surveillance data manager&lt;/a&gt;, I want:
+&gt;To be able to flag issues with a case and send that case to the data collector</p>
+
+<p>so that</p>
+
+<p>&gt;The data collector can review, follow up and correct the case record when further information is available</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.21.html"
+                  title="Requirements/BDS.FXNREQ.21">To be able to flag issues with a case and send that case to the surveillance data manager for review and follow up</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Birthdefectspecialist.html"&gt;Birth defect specialist&lt;/a&gt;, I want:
+&gt;To be able to flag issues with a case and send that case to the surveillance data manager for review and follow up</p>
+
+<p>so that</p>
+
+<p>&gt;The surveillance data manager can add more information to  the case record and send it to the data collector</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.20.html"
+                  title="Requirements/BDS.FXNREQ.20">To be able to send the final determination regarding the diagnosis back to the care provider using an application notification, email, SMS or other method, if required by the local protocol</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillancedatamanager.html"&gt;Surveillance data manager&lt;/a&gt;, I want:
+&gt;To be able to send the final determination regarding the diagnosis back to the care provider using an application notification, email, SMS or other method, if required by the local protocol</p>
+
+<p>so that</p>
+
+<p>&gt;The care provider has a final verified diagnosis to provide better care to newborn</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.10.html"
+                  title="Requirements/BDS.FXNREQ.10">To be able to update demographic information of newborn/mother/informant</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;To be able to update demographic information of newborn/mother/informant</p>
+
+<p>so that</p>
+
+<p>&gt;The most current information can be recorded</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.13.html"
+                  title="Requirements/BDS.FXNREQ.13">To bypass the standard flow as needed and jump between sections, except when local protocols demand consent to proceed</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;To bypass the standard flow as needed and jump between sections, except when local protocols demand consent to proceed</p>
+
+<p>so that</p>
+
+<p>&gt;The data can be entered in a nonlinear fashion as needed</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.7.html" title="Requirements/BDS.FXNREQ.7">To create a new case record with a unique ID and timestamp of record creation</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;To create a new case record with a unique ID and timestamp of record creation</p>
+
+<p>so that</p>
+
+<p>&gt;I can begin entering birth defects case information</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.24.html"
+                  title="Requirements/BDS.FXNREQ.24">To have the ability to aggregate the data by time period and surveillance population</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillancedatamanager.html"&gt;Surveillance data manager&lt;/a&gt;, I want:
+&gt;To have the ability to aggregate the data by time period and surveillance population</p>
+
+<p>so that</p>
+
+<p>&gt;I can check the data for quality issues</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.28.html"
+                  title="Requirements/BDS.FXNREQ.28">To have the ability to deidentify the data and prepare the database for analysis and reporting</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillancedatamanager.html"&gt;Surveillance data manager&lt;/a&gt;, I want:
+&gt;To have the ability to deidentify the data and prepare the database for analysis and reporting</p>
+
+<p>so that</p>
+
+<p>&gt;Sensitive personal information is not included in birth defects surveillance reports or any results from the analysis</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.27.html"
+                  title="Requirements/BDS.FXNREQ.27">To have the ability to make changes to the data (case records)</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillancedatamanager.html"&gt;Surveillance data manager&lt;/a&gt;, I want:
+&gt;To have the ability to make changes to the data (case records)</p>
+
+<p>so that</p>
+
+<p>&gt;I can correct issues that I have detected</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.26.html"
+                  title="Requirements/BDS.FXNREQ.26">To have the ability to query the data to look for issues of data quality</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillancedatamanager.html"&gt;Surveillance data manager&lt;/a&gt;, I want:
+&gt;To have the ability to query the data to look for issues of data quality</p>
+
+<p>so that</p>
+
+<p>&gt;I can detect problems with the data</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.33.html"
+                  title="Requirements/BDS.FXNREQ.33">To have the ability to see a summary of all birth defects cases captured in the health facilities participating in the surveillance system</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillanceprogrammemanager.html"&gt;Surveillance programme manager&lt;/a&gt;, I want:
+&gt;To have the ability to see a summary of all birth defects cases captured in the health facilities participating in the surveillance system</p>
+
+<p>so that</p>
+
+<p>&gt;I can make better decisions related to birth defect prevention for a given administrative area/region/country</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.15.html"
+                  title="Requirements/BDS.FXNREQ.15">To have the ability to upload images and videos of the birth defect in the birth defects surveillance application or system</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;To have the ability to upload images and videos of the birth defect in the birth defects surveillance application or system</p>
+
+<p>so that</p>
+
+<p>&gt;I can share them with specialists and validate if a case shall be recorded</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.32.html"
+                  title="Requirements/BDS.FXNREQ.32">To have the possibility to download the data to my own programme data centre</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillanceprogrammemanager.html"&gt;Surveillance programme manager&lt;/a&gt;, I want:
+&gt;To have the possibility to download the data to my own programme data centre</p>
+
+<p>so that</p>
+
+<p>&gt;I have a local copy of the data for anlysis and merge with other years/cohorts of data</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.17.html"
+                  title="Requirements/BDS.FXNREQ.17">To have the possibility to see or visualize medical data and previous measurements (log history) </a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;To have the possibility to see or visualize medical data and previous measurements (log history)</p>
+
+<p>so that</p>
+
+<p>&gt;I can better monitor the case</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.30.html"
+                  title="Requirements/BDS.FXNREQ.30">To produce reports based on stored templates</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillancedatamanager.html"&gt;Surveillance data manager&lt;/a&gt;, I want:
+&gt;To produce reports based on stored templates</p>
+
+<p>so that</p>
+
+<p>&gt;I do not need to create the reports manually for reporting purposes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.6.html" title="Requirements/BDS.FXNREQ.6">To search with wildcards (using a symbol to replace one or more characters)</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;To search with wildcards (using a symbol to replace one or more characters)</p>
+
+<p>so that</p>
+
+<p>&gt;I can find something without knowing the exact spelling</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.37.html"
+                  title="Requirements/BDS.FXNREQ.37">To view a range of standardized visualizations (e.g. charts, tables, maps)</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Surveillanceprogrammemanager.html"&gt;Surveillance programme manager&lt;/a&gt;, I want:
+&gt;To view a range of standardized visualizations (e.g. charts, tables, maps)</p>
+
+<p>so that</p>
+
+<p>&gt;I am able to use data, collected in the health facilities participating in the surveillance system, for service delivery and informing programmatic actions with the aim of improving the quality of care for clients</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.56.html"
+                  title="Requirements/BDS.NFXNREQ.56">Use industry standard user interface practices and apply them consistently throughout the system</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Use industry standard user interface practices and apply them consistently throughout the system</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.45.html"
+                  title="Requirements/BDS.NFXNREQ.45">Warn user if no valid backup for more than a predefined number of days</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – reliability
+Warn user if no valid backup for more than a predefined number of days</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.NFXNREQ.42.html"
+                  title="Requirements/BDS.NFXNREQ.42">Work in environments subject to loss of connectivity</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – reliability
+Work in environments subject to loss of connectivity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-BDS.FXNREQ.8.html" title="Requirements/BDS.FXNREQ.8">to be able to retrieve client information (e.g. newborn, mother, father) from existing electronic medical records and link it to the case record</a>
+            </td>
+            <td>
+<p>I want &lt;a href="ActorDefinition-Datacollector.html"&gt;Data collector&lt;/a&gt;, I want:
+&gt;to be able to retrieve client information (e.g. newborn, mother, father) from existing electronic medical records and link it to the case record</p>
+
+<p>so that</p>
+
+<p>&gt;I can reuse existing data and avoid collecting the same data multiple times from the client</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-FXREQCategories.html" title="ValueSet/FXREQCategories">Functional Requirement Categories</a>
+            </td>
+            <td>
+<p>Value Set for Functional Requirement Categories. Autogenerated from DAK artifacts</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-FXREQCategories.html"
+                  title="CodeSystem/FXREQCategories">Functional Requirement Categories</a>
+            </td>
+            <td>
+<p>CodeSystem for Functional Requirement Categories. Autogenerated from DAK artifacts</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Other </h3>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.1.html" title="Binary/LM.BDS.NFXNREQ.1">LM.BDS.NFXNREQ.1</a>
+            </td>
+            <td>
+<p>Provide password-protected access for authorized users</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.10.html" title="Binary/LM.BDS.NFXNREQ.10">LM.BDS.NFXNREQ.10</a>
+            </td>
+            <td>
+<p>Notify user to change password the first time they log in</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.11.html" title="Binary/LM.BDS.NFXNREQ.11">LM.BDS.NFXNREQ.11</a>
+            </td>
+            <td>
+<p>Adhere to complex password requirements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.12.html" title="Binary/LM.BDS.NFXNREQ.12">LM.BDS.NFXNREQ.12</a>
+            </td>
+            <td>
+<p>Provide mechanism to securely change a user's password</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.13.html" title="Binary/LM.BDS.NFXNREQ.13">LM.BDS.NFXNREQ.13</a>
+            </td>
+            <td>
+<p>Notify user of password change to their account</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.14.html" title="Binary/LM.BDS.NFXNREQ.14">LM.BDS.NFXNREQ.14</a>
+            </td>
+            <td>
+<p>Reset user's password in a secure manner</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.15.html" title="Binary/LM.BDS.NFXNREQ.15">LM.BDS.NFXNREQ.15</a>
+            </td>
+            <td>
+<p>Lock out user after a specified number of wrong password attempts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.16.html" title="Binary/LM.BDS.NFXNREQ.16">LM.BDS.NFXNREQ.16</a>
+            </td>
+            <td>
+<p>Notify user if their account is locked due to wrong password attempts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.17.html" title="Binary/LM.BDS.NFXNREQ.17">LM.BDS.NFXNREQ.17</a>
+            </td>
+            <td>
+<p>Require each user to authenticate by role before gaining access to the system</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.18.html" title="Binary/LM.BDS.NFXNREQ.18">LM.BDS.NFXNREQ.18</a>
+            </td>
+            <td>
+<p>Log system logins and logouts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.19.html" title="Binary/LM.BDS.NFXNREQ.19">LM.BDS.NFXNREQ.19</a>
+            </td>
+            <td>
+<p>Record all authentication violations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.2.html" title="Binary/LM.BDS.NFXNREQ.2">LM.BDS.NFXNREQ.2</a>
+            </td>
+            <td>
+<p>Provide a means to ensure confidentiality and privacy of personal health information</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.20.html" title="Binary/LM.BDS.NFXNREQ.20">LM.BDS.NFXNREQ.20</a>
+            </td>
+            <td>
+<p>Log all activities performed by the user, including date- and timestamp</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.21.html" title="Binary/LM.BDS.NFXNREQ.21">LM.BDS.NFXNREQ.21</a>
+            </td>
+            <td>
+<p>Log access to views of individual client records</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.22.html" title="Binary/LM.BDS.NFXNREQ.22">LM.BDS.NFXNREQ.22</a>
+            </td>
+            <td>
+<p>Log access to data summaries, reports, analysis and visualization features</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.23.html" title="Binary/LM.BDS.NFXNREQ.23">LM.BDS.NFXNREQ.23</a>
+            </td>
+            <td>
+<p>Log exchange of data with other systems</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.24.html" title="Binary/LM.BDS.NFXNREQ.24">LM.BDS.NFXNREQ.24</a>
+            </td>
+            <td>
+<p>Generate analysis of the usage of different system features and reports</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.25.html" title="Binary/LM.BDS.NFXNREQ.25">LM.BDS.NFXNREQ.25</a>
+            </td>
+            <td>
+<p>Log all data and system errors</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.26.html" title="Binary/LM.BDS.NFXNREQ.26">LM.BDS.NFXNREQ.26</a>
+            </td>
+            <td>
+<p>Permit independent security audits to check security compliance on a regular basis, if required by protocol</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.27.html" title="Binary/LM.BDS.NFXNREQ.27">LM.BDS.NFXNREQ.27</a>
+            </td>
+            <td>
+<p>Allow user with permission to create a new user and temporary password</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.28.html" title="Binary/LM.BDS.NFXNREQ.28">LM.BDS.NFXNREQ.28</a>
+            </td>
+            <td>
+<p>Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.29.html" title="Binary/LM.BDS.NFXNREQ.29">LM.BDS.NFXNREQ.29</a>
+            </td>
+            <td>
+<p>Allow roles to be associated with specific geographical areas and/or health-care facilities</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.3.html" title="Binary/LM.BDS.NFXNREQ.3">LM.BDS.NFXNREQ.3</a>
+            </td>
+            <td>
+<p>No personally identifiable information could be shared from the local device in the country to a cloud server or other servers out of the country</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.30.html" title="Binary/LM.BDS.NFXNREQ.30">LM.BDS.NFXNREQ.30</a>
+            </td>
+            <td>
+<p>Allow cascading user management and assignment of roles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.31.html" title="Binary/LM.BDS.NFXNREQ.31">LM.BDS.NFXNREQ.31</a>
+            </td>
+            <td>
+<p>Allow user to change their own password</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.32.html" title="Binary/LM.BDS.NFXNREQ.32">LM.BDS.NFXNREQ.32</a>
+            </td>
+            <td>
+<p>Allow admin user to request password reset</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.33.html" title="Binary/LM.BDS.NFXNREQ.33">LM.BDS.NFXNREQ.33</a>
+            </td>
+            <td>
+<p>Notify user to regularly change their password</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.34.html" title="Binary/LM.BDS.NFXNREQ.34">LM.BDS.NFXNREQ.34</a>
+            </td>
+            <td>
+<p>Provide a unique version number for each revision</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.35.html" title="Binary/LM.BDS.NFXNREQ.35">LM.BDS.NFXNREQ.35</a>
+            </td>
+            <td>
+<p>Generate IDs that are unique across different installations or sites</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.36.html" title="Binary/LM.BDS.NFXNREQ.36">LM.BDS.NFXNREQ.36</a>
+            </td>
+            <td>
+<p>Report version number when saving data to the database</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.37.html" title="Binary/LM.BDS.NFXNREQ.37">LM.BDS.NFXNREQ.37</a>
+            </td>
+            <td>
+<p>Show the number of records that are not yet synchronized</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.38.html" title="Binary/LM.BDS.NFXNREQ.38">LM.BDS.NFXNREQ.38</a>
+            </td>
+            <td>
+<p>Provide capacity of the solution to be linked to data visualizer tool (e.g. Pw Bi, DHIS2)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.39.html" title="Binary/LM.BDS.NFXNREQ.39">LM.BDS.NFXNREQ.39</a>
+            </td>
+            <td>
+<p>Provide capacity of the solution to extensive reporting and analytic capabilities (e.g. export CSV files/usage metrics/built-in reporting and analytics)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.4.html" title="Binary/LM.BDS.NFXNREQ.4">LM.BDS.NFXNREQ.4</a>
+            </td>
+            <td>
+<p>Provide ability for allowed users to view confidential data</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.40.html" title="Binary/LM.BDS.NFXNREQ.40">LM.BDS.NFXNREQ.40</a>
+            </td>
+            <td>
+<p>Must have ability to store images and other unstructured data</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.41.html" title="Binary/LM.BDS.NFXNREQ.41">LM.BDS.NFXNREQ.41</a>
+            </td>
+            <td>
+<p>Enable system deployment in environments subject to power loss</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.42.html" title="Binary/LM.BDS.NFXNREQ.42">LM.BDS.NFXNREQ.42</a>
+            </td>
+            <td>
+<p>Work in environments subject to loss of connectivity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.43.html" title="Binary/LM.BDS.NFXNREQ.43">LM.BDS.NFXNREQ.43</a>
+            </td>
+            <td>
+<p>Enable earlier versions of records to be recoverable</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.44.html" title="Binary/LM.BDS.NFXNREQ.44">LM.BDS.NFXNREQ.44</a>
+            </td>
+            <td>
+<p>Have ability to easily back up information</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.45.html" title="Binary/LM.BDS.NFXNREQ.45">LM.BDS.NFXNREQ.45</a>
+            </td>
+            <td>
+<p>Warn user if no valid backup for more than a predefined number of days</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.46.html" title="Binary/LM.BDS.NFXNREQ.46">LM.BDS.NFXNREQ.46</a>
+            </td>
+            <td>
+<p>Be able to revert to the latest functional version of the solution without losing data (server backup/restore, disaster recovery plan)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.47.html" title="Binary/LM.BDS.NFXNREQ.47">LM.BDS.NFXNREQ.47</a>
+            </td>
+            <td>
+<p>Scalable to accommodate new demands</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.48.html" title="Binary/LM.BDS.NFXNREQ.48">LM.BDS.NFXNREQ.48</a>
+            </td>
+            <td>
+<p>Be able to accommodate at least [x number of]a health-care facilities</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.49.html" title="Binary/LM.BDS.NFXNREQ.49">LM.BDS.NFXNREQ.49</a>
+            </td>
+            <td>
+<p>Be able to accommodate at least [x number of]a concurrent users</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.5.html" title="Binary/LM.BDS.NFXNREQ.5">LM.BDS.NFXNREQ.5</a>
+            </td>
+            <td>
+<p>Anonymize data exported from the system</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.50.html" title="Binary/LM.BDS.NFXNREQ.50">LM.BDS.NFXNREQ.50</a>
+            </td>
+            <td>
+<p>Be user-friendly for people with low computer literacy</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.51.html" title="Binary/LM.BDS.NFXNREQ.51">LM.BDS.NFXNREQ.51</a>
+            </td>
+            <td>
+<p>Provide informative error messages and tool-tips</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.52.html" title="Binary/LM.BDS.NFXNREQ.52">LM.BDS.NFXNREQ.52</a>
+            </td>
+            <td>
+<p>Alert user when navigating away from a form without saving</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.53.html" title="Binary/LM.BDS.NFXNREQ.53">LM.BDS.NFXNREQ.53</a>
+            </td>
+            <td>
+<p>Support real-time data-entry validation and feedback to prevent data-entry errors from being recorded</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.54.html" title="Binary/LM.BDS.NFXNREQ.54">LM.BDS.NFXNREQ.54</a>
+            </td>
+            <td>
+<p>Simplify data recording through predefined dropdown menu or searchable lists, radio buttons or checkboxes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.55.html" title="Binary/LM.BDS.NFXNREQ.55">LM.BDS.NFXNREQ.55</a>
+            </td>
+            <td>
+<p>Support multiple languages</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.56.html" title="Binary/LM.BDS.NFXNREQ.56">LM.BDS.NFXNREQ.56</a>
+            </td>
+            <td>
+<p>Use industry standard user interface practices and apply them consistently throughout the system</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.57.html" title="Binary/LM.BDS.NFXNREQ.57">LM.BDS.NFXNREQ.57</a>
+            </td>
+            <td>
+<p>Easy to learn and intuitive to enable user to navigate between pages</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.58.html" title="Binary/LM.BDS.NFXNREQ.58">LM.BDS.NFXNREQ.58</a>
+            </td>
+            <td>
+<p>Provide guidance to users to better support clinical guidelines and best clinical practices</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.59.html" title="Binary/LM.BDS.NFXNREQ.59">LM.BDS.NFXNREQ.59</a>
+            </td>
+            <td>
+<p>Be reliable and robust (minimize the number of system crashes)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.6.html" title="Binary/LM.BDS.NFXNREQ.6">LM.BDS.NFXNREQ.6</a>
+            </td>
+            <td>
+<p>Prevent remembering username and password</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.60.html" title="Binary/LM.BDS.NFXNREQ.60">LM.BDS.NFXNREQ.60</a>
+            </td>
+            <td>
+<p>Adjust display to fit small screens (e.g. on mobile phones)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.61.html" title="Binary/LM.BDS.NFXNREQ.61">LM.BDS.NFXNREQ.61</a>
+            </td>
+            <td>
+<p>Allow adaptability to multiple operating systems (e.g. Windows, Linux, IOS, Android)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.62.html" title="Binary/LM.BDS.NFXNREQ.62">LM.BDS.NFXNREQ.62</a>
+            </td>
+            <td>
+<p>Compatible with range of mobile devices, including smartphones and tablets</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.63.html" title="Binary/LM.BDS.NFXNREQ.63">LM.BDS.NFXNREQ.63</a>
+            </td>
+            <td>
+<p>Accept data from multiple input methods, including paper and geocoding (GPS)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.64.html" title="Binary/LM.BDS.NFXNREQ.64">LM.BDS.NFXNREQ.64</a>
+            </td>
+            <td>
+<p>Provide user guidelines and training materials to effectively use the IT solution</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.65.html" title="Binary/LM.BDS.NFXNREQ.65">LM.BDS.NFXNREQ.65</a>
+            </td>
+            <td>
+<p>Provide technical documentation of the IT solution (e.g. system architecture documentation, application programming interface (API) documentation)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.66.html" title="Binary/LM.BDS.NFXNREQ.66">LM.BDS.NFXNREQ.66</a>
+            </td>
+            <td>
+<p>Configure system centrally</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.67.html" title="Binary/LM.BDS.NFXNREQ.67">LM.BDS.NFXNREQ.67</a>
+            </td>
+            <td>
+<p>Configure business rules in line with guidelines and standard operating procedures</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.68.html" title="Binary/LM.BDS.NFXNREQ.68">LM.BDS.NFXNREQ.68</a>
+            </td>
+            <td>
+<p>Configure error messages</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.69.html" title="Binary/LM.BDS.NFXNREQ.69">LM.BDS.NFXNREQ.69</a>
+            </td>
+            <td>
+<p>Configure workflows and business rules to accommodate differences between facilities</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.7.html" title="Binary/LM.BDS.NFXNREQ.7">LM.BDS.NFXNREQ.7</a>
+            </td>
+            <td>
+<p>Automatically log out the user after specified time of inactivity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.70.html" title="Binary/LM.BDS.NFXNREQ.70">LM.BDS.NFXNREQ.70</a>
+            </td>
+            <td>
+<p>Store important system documents and information such as protocols, case inclusion criteria, surveillance population and similar important facets of the system, and make them available for retrieval as needed</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.71.html" title="Binary/LM.BDS.NFXNREQ.71">LM.BDS.NFXNREQ.71</a>
+            </td>
+            <td>
+<p>Provide ability to create, read, update and delete report templates to use for automated reporting</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.72.html" title="Binary/LM.BDS.NFXNREQ.72">LM.BDS.NFXNREQ.72</a>
+            </td>
+            <td>
+<p>Communicate with external systems through mediators</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.73.html" title="Binary/LM.BDS.NFXNREQ.73">LM.BDS.NFXNREQ.73</a>
+            </td>
+            <td>
+<p>Provide access to data through APIs</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.74.html" title="Binary/LM.BDS.NFXNREQ.74">LM.BDS.NFXNREQ.74</a>
+            </td>
+            <td>
+<p>Link with insurance systems to verify eligibility and submit claims</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.75.html" title="Binary/LM.BDS.NFXNREQ.75">LM.BDS.NFXNREQ.75</a>
+            </td>
+            <td>
+<p>Allow for data exchange and efficient synchronization across multiple facilities and points of service when Internet is available, even when it is intermittent and slow</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.76.html" title="Binary/LM.BDS.NFXNREQ.76">LM.BDS.NFXNREQ.76</a>
+            </td>
+            <td>
+<p>Architecture of the solution is consistent with architecture of HIS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.77.html" title="Binary/LM.BDS.NFXNREQ.77">LM.BDS.NFXNREQ.77</a>
+            </td>
+            <td>
+<p>Solution should use international coding standards for data whenever possible
+Countries can develop their own local coding system, but WHO recommends use of ICD-10 coding system to classify congenital anomalies for international reporting and comparisons</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.78.html" title="Binary/LM.BDS.NFXNREQ.78">LM.BDS.NFXNREQ.78</a>
+            </td>
+            <td>
+<p>The system should be able to integrate with other approved systems, such as electronic medical records and public health databases, to allow for seamless data sharing and analysis</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.79.html" title="Binary/LM.BDS.NFXNREQ.79">LM.BDS.NFXNREQ.79</a>
+            </td>
+            <td>
+<p>A birth defects surveillance mobile application should be able to function as a standalone (for training purposes, small-scale surveillance or other uses) and/or contribute data to a centralized database, depending on local protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.8.html" title="Binary/LM.BDS.NFXNREQ.8">LM.BDS.NFXNREQ.8</a>
+            </td>
+            <td>
+<p>Provide encrypted communication between components</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.80.html" title="Binary/LM.BDS.NFXNREQ.80">LM.BDS.NFXNREQ.80</a>
+            </td>
+            <td>
+<p>If possible, the system should be embedded into the maternal/neonatal information system as an additional module</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-LM.BDS.NFXNREQ.9.html" title="Binary/LM.BDS.NFXNREQ.9">LM.BDS.NFXNREQ.9</a>
+            </td>
+            <td>
+<p>Access to data, data transfer and data storage are secured (encrypted)</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.dak-bds#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 1, 2025 09:13+0000">2025-07-01</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/dak-bds/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+

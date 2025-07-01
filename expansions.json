@@ -1,0 +1,101 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "d1406492-e930-40e7-8a69-e7d51e37a8b1",
+  "meta" : {
+    "lastUpdated" : "2025-07-01T09:13:15.971+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://smart.who.int/dak-bds/ValueSet/FXREQCategories",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-FXREQCategories.html\">codesystem Functional Requirement Categories v1.0.1 (CodeSystem)</a></p><p>This value set contains 10 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/dak-bds/CodeSystem/FXREQCategories-Securityconfidentiality\"> </a>\u00a0\u00a0<a href=\"CodeSystem-FXREQCategories.html#FXREQCategories-Securityconfidentiality\">Securityconfidentiality</a></td><td>http://smart.who.int/dak-bds/CodeSystem/FXREQCategories</td><td>Security – confidentiality</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/dak-bds/CodeSystem/FXREQCategories-Securityauthentication\"> </a>\u00a0\u00a0<a href=\"CodeSystem-FXREQCategories.html#FXREQCategories-Securityauthentication\">Securityauthentication</a></td><td>http://smart.who.int/dak-bds/CodeSystem/FXREQCategories</td><td>Security – authentication</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/dak-bds/CodeSystem/FXREQCategories-Securityaudittrailandlogs\"> </a>\u00a0\u00a0<a href=\"CodeSystem-FXREQCategories.html#FXREQCategories-Securityaudittrailandlogs\">Securityaudittrailandlogs</a></td><td>http://smart.who.int/dak-bds/CodeSystem/FXREQCategories</td><td>Security – audit trail and logs</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/dak-bds/CodeSystem/FXREQCategories-Securityusermanagement\"> </a>\u00a0\u00a0<a href=\"CodeSystem-FXREQCategories.html#FXREQCategories-Securityusermanagement\">Securityusermanagement</a></td><td>http://smart.who.int/dak-bds/CodeSystem/FXREQCategories</td><td>Security – user management</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/dak-bds/CodeSystem/FXREQCategories-Systemrequirementsgeneral\"> </a>\u00a0\u00a0<a href=\"CodeSystem-FXREQCategories.html#FXREQCategories-Systemrequirementsgeneral\">Systemrequirementsgeneral</a></td><td>http://smart.who.int/dak-bds/CodeSystem/FXREQCategories</td><td>System requirements – general</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/dak-bds/CodeSystem/FXREQCategories-Systemrequirementsreliability\"> </a>\u00a0\u00a0<a href=\"CodeSystem-FXREQCategories.html#FXREQCategories-Systemrequirementsreliability\">Systemrequirementsreliability</a></td><td>http://smart.who.int/dak-bds/CodeSystem/FXREQCategories</td><td>System requirements – reliability</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/dak-bds/CodeSystem/FXREQCategories-Systemrequirementsscalability\"> </a>\u00a0\u00a0<a href=\"CodeSystem-FXREQCategories.html#FXREQCategories-Systemrequirementsscalability\">Systemrequirementsscalability</a></td><td>http://smart.who.int/dak-bds/CodeSystem/FXREQCategories</td><td>System requirements – scalability</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/dak-bds/CodeSystem/FXREQCategories-Systemrequirementsusability\"> </a>\u00a0\u00a0<a href=\"CodeSystem-FXREQCategories.html#FXREQCategories-Systemrequirementsusability\">Systemrequirementsusability</a></td><td>http://smart.who.int/dak-bds/CodeSystem/FXREQCategories</td><td>System requirements – usability</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/dak-bds/CodeSystem/FXREQCategories-Systemrequirementsconfiguration\"> </a>\u00a0\u00a0<a href=\"CodeSystem-FXREQCategories.html#FXREQCategories-Systemrequirementsconfiguration\">Systemrequirementsconfiguration</a></td><td>http://smart.who.int/dak-bds/CodeSystem/FXREQCategories</td><td>System requirements – configuration</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://smart.who.int/dak-bds/CodeSystem/FXREQCategories-Systemrequirementsinteroperability\"> </a>\u00a0\u00a0<a href=\"CodeSystem-FXREQCategories.html#FXREQCategories-Systemrequirementsinteroperability\">Systemrequirementsinteroperability</a></td><td>http://smart.who.int/dak-bds/CodeSystem/FXREQCategories</td><td>System requirements – interoperability</td></tr></table></div>"
+      },
+      "url" : "http://smart.who.int/dak-bds/ValueSet/FXREQCategories",
+      "version" : "1.0.1",
+      "name" : "FXREQCategories",
+      "title" : "Functional Requirement Categories",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2025-07-01T09:12:20+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:c5155664-2d95-4e1e-8e48-8b6142bea081",
+        "timestamp" : "2025-07-01T09:14:15+00:00",
+        "total" : 10,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://smart.who.int/dak-bds/CodeSystem/FXREQCategories|1.0.1"
+        }],
+        "contains" : [{
+          "system" : "http://smart.who.int/dak-bds/CodeSystem/FXREQCategories",
+          "code" : "Securityconfidentiality",
+          "display" : "Security – confidentiality"
+        },
+        {
+          "system" : "http://smart.who.int/dak-bds/CodeSystem/FXREQCategories",
+          "code" : "Securityauthentication",
+          "display" : "Security – authentication"
+        },
+        {
+          "system" : "http://smart.who.int/dak-bds/CodeSystem/FXREQCategories",
+          "code" : "Securityaudittrailandlogs",
+          "display" : "Security – audit trail and logs"
+        },
+        {
+          "system" : "http://smart.who.int/dak-bds/CodeSystem/FXREQCategories",
+          "code" : "Securityusermanagement",
+          "display" : "Security – user management"
+        },
+        {
+          "system" : "http://smart.who.int/dak-bds/CodeSystem/FXREQCategories",
+          "code" : "Systemrequirementsgeneral",
+          "display" : "System requirements – general"
+        },
+        {
+          "system" : "http://smart.who.int/dak-bds/CodeSystem/FXREQCategories",
+          "code" : "Systemrequirementsreliability",
+          "display" : "System requirements – reliability"
+        },
+        {
+          "system" : "http://smart.who.int/dak-bds/CodeSystem/FXREQCategories",
+          "code" : "Systemrequirementsscalability",
+          "display" : "System requirements – scalability"
+        },
+        {
+          "system" : "http://smart.who.int/dak-bds/CodeSystem/FXREQCategories",
+          "code" : "Systemrequirementsusability",
+          "display" : "System requirements – usability"
+        },
+        {
+          "system" : "http://smart.who.int/dak-bds/CodeSystem/FXREQCategories",
+          "code" : "Systemrequirementsconfiguration",
+          "display" : "System requirements – configuration"
+        },
+        {
+          "system" : "http://smart.who.int/dak-bds/CodeSystem/FXREQCategories",
+          "code" : "Systemrequirementsinteroperability",
+          "display" : "System requirements – interoperability"
+        }]
+      }
+    }
+  }]
+}
